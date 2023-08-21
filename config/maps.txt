@@ -47,6 +47,12 @@ map tramstation
 	votable
 endmap
 
+map tinystation
+	minplayers 2
+	maxplayers 10
+	votable
+endmap
+
 # Debug-only maps.
 
 map gateway_test
