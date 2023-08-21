@@ -14,8 +14,6 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
-#include "_maps\map_files\TinyStation\TinyStation.dmm"
-#include "_maps\shuttles\arrival_tiny.dmm"
 #include "code\__byond_version_compat.dm"
 #include "code\_compile_options.dm"
 #include "code\_experiments.dm"
@@ -5406,8 +5404,8 @@
 #include "code\ze_genesis_call\genesis_call.dm"
 #include "interface\interface.dm"
 #include "interface\menu.dm"
-#include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "interface\stylesheet.dm"
 #include "interface\fonts\fonts_datum.dm"
 #include "interface\fonts\grand_9k.dm"
 #include "interface\fonts\pixellari.dm"
