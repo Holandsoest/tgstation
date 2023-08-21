@@ -4,7 +4,7 @@
 "l" = (/obj/machinery/power/shuttle_engine/heater,/obj/structure/window/reinforced/spawner/directional/north,/turf/open/space/basic,/area/shuttle/arrival)
 "n" = (/obj/structure/chair/comfy/shuttle{dir = 8},/obj/structure/window/reinforced/spawner/directional/south,/obj/structure/window/reinforced/spawner/directional/east,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
 "o" = (/obj/machinery/door/airlock/titanium{name = "Arrivals Shuttle Airlock"},/turf/open/floor/mineral/titanium,/area/shuttle/arrival)
-"A" = (/obj/machinery/power/shuttle_engine/propulsion/burst,/obj/docking_port/mobile/arrivals{name = "tiny arrivals shuttle"; dir = 1},/turf/open/space/basic,/area/shuttle/arrival)
+"A" = (/obj/machinery/power/shuttle_engine/propulsion/burst,/obj/docking_port/mobile/arrivals{name = "tiny arrivals shuttle"; dir = 1; width = 3; height = 7; dwidth = 1},/turf/open/space/basic,/area/shuttle/arrival)
 "C" = (/turf/template_noop,/area/template_noop)
 "G" = (/obj/structure/chair/comfy/shuttle{dir = 4},/obj/structure/window/reinforced/spawner/directional/west,/obj/structure/window/reinforced/spawner/directional/south,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
 "I" = (/obj/machinery/door/window/right/directional/south,/turf/open/floor/mineral/titanium,/area/shuttle/arrival)
