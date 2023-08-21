@@ -1,0 +1,25 @@
+"a" = (/obj/structure/window/reinforced/spawner/directional/north,/turf/open/floor/mineral/titanium,/area/shuttle/arrival)
+"e" = (/obj/structure/chair/comfy/shuttle{dir = 8},/obj/structure/window/reinforced/spawner/directional/east,/obj/structure/window/reinforced/spawner/directional/north,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
+"k" = (/obj/structure/chair/comfy/shuttle{dir = 4},/obj/structure/window/reinforced/spawner/directional/west,/obj/structure/window/reinforced/spawner/directional/north,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
+"l" = (/obj/machinery/power/shuttle_engine/heater,/obj/structure/window/reinforced/spawner/directional/north,/turf/open/space/basic,/area/shuttle/arrival)
+"n" = (/obj/structure/chair/comfy/shuttle{dir = 8},/obj/structure/window/reinforced/spawner/directional/south,/obj/structure/window/reinforced/spawner/directional/east,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
+"o" = (/obj/machinery/door/airlock/titanium{name = "Arrivals Shuttle Airlock"},/turf/open/floor/mineral/titanium,/area/shuttle/arrival)
+"A" = (/obj/machinery/power/shuttle_engine/propulsion/burst,/obj/docking_port/mobile/arrivals{name = "tiny arrivals shuttle"; dir = 1},/turf/open/space/basic,/area/shuttle/arrival)
+"C" = (/turf/template_noop,/area/template_noop)
+"G" = (/obj/structure/chair/comfy/shuttle{dir = 4},/obj/structure/window/reinforced/spawner/directional/west,/obj/structure/window/reinforced/spawner/directional/south,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
+"I" = (/obj/machinery/door/window/right/directional/south,/turf/open/floor/mineral/titanium,/area/shuttle/arrival)
+"M" = (/obj/structure/closet/emcloset/anchored,/obj/structure/window/reinforced/spawner/directional/west,/obj/machinery/light/small/directional/south,/obj/structure/extinguisher_cabinet/directional/south,/obj/item/storage/toolbox/emergency,/obj/item/storage/medkit/regular{pixel_y = 4},/obj/item/clothing/mask/breath,/obj/item/tank/internals/emergency_oxygen,/turf/open/floor/mineral/titanium,/area/shuttle/arrival)
+"P" = (/turf/closed/wall/mineral/titanium,/area/shuttle/arrival)
+"Q" = (/obj/structure/chair/comfy/shuttle{dir = 4},/obj/structure/window/reinforced/spawner/directional/west,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
+"S" = (/turf/open/floor/mineral/titanium,/area/shuttle/arrival)
+"U" = (/obj/structure/chair/comfy/shuttle{dir = 8},/obj/structure/window/reinforced/spawner/directional/east,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
+
+(1,1,1) = {"
+kae
+QSU
+QSU
+GIn
+MSo
+PlP
+CAC
+"}
