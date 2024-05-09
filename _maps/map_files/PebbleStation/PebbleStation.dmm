@@ -2987,7 +2987,7 @@
 /obj/item/bedsheet/captain,
 /obj/machinery/light/small/directional/east,
 /obj/machinery/camera/directional/south{
-	c_tag = Captain-bedroom
+	c_tag = "Captain-bedroom"
 	},
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/carpet/royalblack,
