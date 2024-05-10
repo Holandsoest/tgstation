@@ -3235,6 +3235,7 @@
 "iv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/start/cyborg,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai_upload)
 "iw" = (
@@ -6277,6 +6278,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
+/obj/effect/landmark/start/cyborg,
 /turf/open/floor/iron,
 /area/station/science/robotics/mechbay)
 "qK" = (
@@ -10409,6 +10411,13 @@
 "BP" = (
 /turf/closed/mineral/volcanic,
 /area/station/maintenance/space_hut/observatory)
+"BQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/effect/landmark/start/cyborg,
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "BR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -12901,6 +12910,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"Ix" = (
+/obj/effect/landmark/start/cyborg,
+/turf/open/floor/iron/textured,
+/area/station/command/teleporter)
 "Iy" = (
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
@@ -13410,6 +13423,10 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/textured,
 /area/station/ai_monitored/command/storage/eva)
+"JS" = (
+/obj/machinery/recharge_station,
+/turf/open/floor/iron/textured,
+/area/station/command/teleporter)
 "JT" = (
 /obj/machinery/space_heater,
 /turf/open/floor/plating,
@@ -13537,6 +13554,7 @@
 /area/station/maintenance/disposal)
 "Ko" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/start/cyborg,
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/captain/private)
 "Kp" = (
@@ -45361,7 +45379,7 @@ yX
 Ee
 EW
 hB
-uK
+JS
 vy
 Nf
 dg
@@ -45874,7 +45892,7 @@ Gz
 AK
 ou
 Xc
-uK
+Ix
 eF
 vy
 ga
@@ -55357,7 +55375,7 @@ MC
 UN
 UN
 UN
-UN
+BQ
 UN
 UN
 UN
