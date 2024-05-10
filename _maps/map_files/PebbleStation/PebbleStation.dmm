@@ -1000,7 +1000,7 @@
 	pixel_y = -23
 	},
 /obj/machinery/door/window/brigdoor/right/directional/east{
-	name = "AI core"
+	name = "AI Core"
 	},
 /turf/open/floor/circuit/green,
 /area/station/ai_monitored/turret_protected/ai)
@@ -2764,7 +2764,6 @@
 "hp" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "hq" = (
@@ -7169,7 +7168,7 @@
 /obj/effect/turf_decal/caution/stand_clear,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	id = "smemiters"
+	cycle_id = "smdoors"
 	},
 /turf/open/floor/iron/dark,
 /area/station/engineering/supermatter/room)
@@ -9151,7 +9150,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	id = "smemiters"
+	cycle_id = "smdoors"
 	},
 /turf/open/floor/plating,
 /area/station/engineering/storage_shared)
@@ -9605,6 +9604,12 @@
 /obj/machinery/iv_drip,
 /turf/open/floor/iron/white,
 /area/station/medical/storage)
+"zZ" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/assembly/mousetrap/armed,
+/turf/open/floor/plating,
+/area/station/maintenance/department/engine)
 "Aa" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/iron/dark,
@@ -10970,6 +10975,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
+"DT" = (
+/obj/item/assembly/mousetrap,
+/turf/open/floor/plating,
+/area/station/maintenance/fore)
 "DU" = (
 /obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
 /obj/machinery/atmospherics/pipe/bridge_pipe/scrubbers/visible{
@@ -11495,6 +11504,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
+"Ft" = (
+/obj/item/assembly/mousetrap,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/aft)
 "Fu" = (
 /turf/closed/wall,
 /area/station/cargo/warehouse)
@@ -11791,9 +11804,6 @@
 /obj/item/hand_labeler{
 	pixel_x = -10;
 	pixel_y = -6
-	},
-/obj/effect/turf_decal/trimline/dark_red/filled/line{
-	dir = 4
 	},
 /turf/open/floor/iron,
 /area/station/security/warden)
@@ -12240,7 +12250,6 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
 "He" = (
@@ -13189,7 +13198,7 @@
 	name = "Engineering Security Doors"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	id = "smemiters"
+	cycle_id = "smdoors"
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/engineering/gravity_generator)
@@ -15182,6 +15191,10 @@
 /obj/machinery/portable_atmospherics/canister,
 /turf/open/floor/iron/large,
 /area/station/engineering/atmos/mix)
+"Pe" = (
+/obj/item/assembly/mousetrap,
+/turf/open/floor/plating,
+/area/station/maintenance/port/central)
 "Pf" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -15443,7 +15456,7 @@
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	id = "smemiters"
+	cycle_id = "smdoors"
 	},
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
@@ -16434,6 +16447,7 @@
 /area/station/hallway/secondary/command)
 "SD" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/hidden,
+/obj/item/assembly/mousetrap,
 /turf/open/floor/plating,
 /area/station/maintenance/department/bridge)
 "SE" = (
@@ -17613,7 +17627,7 @@
 /obj/effect/mapping_helpers/apc/cell_10k,
 /obj/effect/mapping_helpers/apc/full_charge,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	id = "smemiters"
+	cycle_id = "smdoors"
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/engineering/gravity_generator)
@@ -42561,7 +42575,7 @@ DO
 DO
 DO
 Ak
-fo
+Pe
 aj
 Ak
 ny
@@ -47939,7 +47953,7 @@ pH
 xl
 uf
 tt
-JC
+DT
 hC
 bg
 qJ
@@ -55187,7 +55201,7 @@ Yf
 sy
 au
 US
-wR
+Ft
 YZ
 IO
 BZ
@@ -58498,7 +58512,7 @@ DL
 fe
 cv
 yc
-PO
+zZ
 sf
 sf
 sf
