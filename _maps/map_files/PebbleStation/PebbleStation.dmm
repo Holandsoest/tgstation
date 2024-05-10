@@ -4901,7 +4901,6 @@
 /area/station/ai_monitored/security/armory)
 "na" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = s;
 	initialize_directions = 8
 	},
 /turf/open/floor/iron,
