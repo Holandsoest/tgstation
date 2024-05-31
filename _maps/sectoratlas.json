@@ -1,0 +1,12 @@
+{
+	"version": 1,
+	"map_name": "SectorAtlas",
+	"map_path": "map_files/SectorAtlas",
+	"map_file": "SectorAtlas.dmm",
+	"shuttles": {
+		"cargo": "cargo_box",
+		"ferry": "ferry_fancy",
+		"whiteship": "whiteship_meta",
+		"emergency": "emergency_meta"
+	}
+}

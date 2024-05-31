@@ -37,6 +37,12 @@ map metastation
 	votable
 endmap
 
+map sectoratlas
+	maxplayers 20
+	votable
+	default
+endmap
+
 map northstar
 	minplayers 50
 	votable
