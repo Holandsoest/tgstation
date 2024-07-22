@@ -7,12 +7,14 @@
 		/obj/item/fish/cardinal = 15,
 		/obj/item/fish/greenchromis = 15,
 		/obj/item/fish/lanternfish = 5,
+		/obj/item/fish/zipzap = 5,
 		/obj/item/fish/clownfish/lube = 3,
 	)
 	fish_counts = list(
 		/obj/item/fish/clownfish/lube = 2,
 	)
 	fishing_difficulty = FISHING_DEFAULT_DIFFICULTY + 5
+	explosive_malus = TRUE
 
 /datum/fish_source/ocean/beach
 	catalog_description = "Beach shore water"
@@ -67,6 +69,7 @@
 		/obj/item/fish/gunner_jellyfish = 5,
 		/obj/item/fish/needlefish = 5,
 		/obj/item/fish/armorfish = 5,
+		/obj/item/fish/zipzap = 5,
 	)
 	catalog_description = "Ocean dimension (Fishing portal generator)"
 	fishing_difficulty = FISHING_DEFAULT_DIFFICULTY + 10
@@ -157,7 +160,7 @@
 			challenge.special_effects |= effect
 
 ///Cherry on top, fish caught from the randomizer portal also have (almost completely) random traits
-/datum/fish_source/portal/random/spawn_reward(reward_path, mob/fisherman, turf/fishing_spot)
+/datum/fish_source/portal/random/spawn_reward(reward_path, atom/movable/spawn_location, turf/fishing_spot)
 	if(!ispath(reward_path, /obj/item/fish))
 		return ..()
 
@@ -168,7 +171,7 @@
 			var/datum/fish_trait/trait = GLOB.fish_traits[trait_type]
 			weighted_traits[trait.type] = round(trait.inheritability**2/100)
 
-	var/obj/item/fish/caught_fish = new reward_path(get_turf(fisherman), FALSE)
+	var/obj/item/fish/caught_fish = new reward_path(spawn_location, FALSE)
 	var/list/fixed_traits = list()
 	for(var/trait_type in caught_fish.fish_traits)
 		var/datum/fish_trait/trait = GLOB.fish_traits[trait_type]
@@ -194,6 +197,13 @@
 
 	fishing_difficulty = FISHING_DEFAULT_DIFFICULTY + 5
 
+/datum/fish_source/chasm/on_start_fishing(obj/item/fishing_rod/rod, mob/fisherman, atom/parent)
+	. = ..()
+	if(istype(rod.hook, /obj/item/fishing_hook/rescue))
+		to_chat(fisherman, span_notice("The rescue hook falls straight down the chasm! Hopefully it catches a corpse."))
+		return
+	to_chat(fisherman, span_danger("Your fishing hook makes a soft 'thud' noise as it gets stuck on the wall of the chasm. It doesn't look like it's going to catch much of anything, except maybe some detritus."))
+
 /datum/fish_source/chasm/roll_reward(obj/item/fishing_rod/rod, mob/fisherman)
 	var/rolled_reward = ..()
 
@@ -201,6 +211,9 @@
 		return rolled_reward
 
 	return rod.hook.chasm_detritus_type
+
+/datum/fish_source/chasm/spawn_reward_from_explosion(atom/location, severity)
+	return //Spawned content would immediately fall back into the chasm, so it wouldn't matter.
 
 /datum/fish_source/lavaland
 	catalog_description = "Lava vents"
@@ -217,6 +230,7 @@
 	)
 
 	fishing_difficulty = FISHING_DEFAULT_DIFFICULTY + 10
+	explosive_malus = TRUE
 
 /datum/fish_source/lavaland/reason_we_cant_fish(obj/item/fishing_rod/rod, mob/fisherman, atom/parent)
 	. = ..()
@@ -347,6 +361,15 @@
 	if(basin.myseed)
 		return "There's a plant growing in [parent]."
 
+	return ..()
+
+/datum/fish_source/hydro_tray/spawn_reward_from_explosion(atom/location, severity)
+	if(!istype(location, /obj/machinery/hydroponics/constructable))
+		return ..()
+
+	var/obj/machinery/hydroponics/constructable/basin = location
+	if(basin.myseed || basin.waterlevel <= 0)
+		return
 	return ..()
 
 /datum/fish_source/hydro_tray/spawn_reward(reward_path, mob/fisherman, turf/fishing_spot)
