@@ -24,19 +24,22 @@ GLOBAL_LIST_INIT_TYPED(chasm_detritus_types, /datum/chasm_detritus, init_chasm_d
 	/// Stuff which you can always fish up even if nothing fell into a hole. Associative by type.
 	var/static/list/default_contents = list(
 		NORMAL_CONTENTS = list(
-			/obj/item/stack/sheet/bone = 3,
-			/obj/item/stack/ore/slag = 2,
+			/obj/item/stack/sheet/bone = 6,
+			/obj/item/stack/ore/slag = 4,
+			/obj/effect/mob_spawn/corpse/human/skeleton = 2,
 			/mob/living/basic/mining/lobstrosity/lava = 1,
-			/obj/effect/mob_spawn/corpse/human/skeleton = 1,
+			/mob/living/basic/mining/lobstrosity/juvenile/lava = 1,
 		),
 		BODIES_ONLY = list(
-			/obj/effect/mob_spawn/corpse/human/skeleton = 3,
+			/obj/effect/mob_spawn/corpse/human/skeleton = 6,
 			/mob/living/basic/mining/lobstrosity/lava = 1,
+			/mob/living/basic/mining/lobstrosity/juvenile/lava = 1,
 		),
 		NO_CORPSES = list(
-			/obj/item/stack/sheet/bone = 14,
-			/obj/item/stack/ore/slag = 10,
+			/obj/item/stack/sheet/bone = 28,
+			/obj/item/stack/ore/slag = 20,
 			/mob/living/basic/mining/lobstrosity/lava = 1,
+			/mob/living/basic/mining/lobstrosity/juvenile/lava = 1,
 		),
 	)
 
@@ -93,7 +96,7 @@ GLOBAL_LIST_INIT_TYPED(chasm_detritus_types, /datum/chasm_detritus, init_chasm_d
 /// This also includes all mobs fallen into chasms, regardless of distance
 /datum/chasm_detritus/restricted/bodies/get_chasm_contents(turf/fishing_spot)
 	. = ..()
-	. |= GLOB.chasm_fallen_mobs
+	. |= GLOB.chasm_fallen_mobs[get_chasm_category(fishing_spot)]
 
 /// Body detritus is selected in favor of bodies belonging to sentient mobs
 /// The first sentient body found in the list of contents is returned, otherwise
