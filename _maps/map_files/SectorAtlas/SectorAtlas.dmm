@@ -7846,12 +7846,12 @@
 	pipe_color = "#FF0000"
 	},
 /obj/machinery/meter/layer2,
-/obj/machinery/airalarm/directional/south,
 /obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/obj/effect/mapping_helpers/airalarm/engine_access,
+/obj/machinery/airalarm/directional/south,
 /obj/effect/mapping_helpers/airalarm/link{
 	chamber_id = "engine"
 	},
-/obj/effect/mapping_helpers/airalarm/engine_access,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "SO" = (
