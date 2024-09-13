@@ -3078,7 +3078,6 @@
 /obj/machinery/computer/accounting{
 	dir = 4
 	},
-/obj/machinery/keycard_auth/directional/south,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "ahI" = (
@@ -4806,9 +4805,6 @@
 /area/station/commons/dorms)
 "aml" = (
 /obj/machinery/computer/rdconsole,
-/obj/machinery/keycard_auth/directional/north{
-	pixel_x = -5
-	},
 /obj/machinery/button/door/directional/north{
 	id = "xeno_blastdoor";
 	name = "Xenobiology Containment Control";
@@ -5542,7 +5538,7 @@
 "aoc" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/security/wooden_tv,
-/obj/machinery/keycard_auth/directional/north,
+/obj/machinery/keycard_auth/wall_mounted/directional/east,
 /turf/open/floor/carpet/stellar,
 /area/station/command/heads_quarters/captain/private)
 "aod" = (
@@ -10382,9 +10378,6 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "aAu" = (
-/obj/machinery/keycard_auth/directional/south{
-	pixel_x = 6
-	},
 /obj/machinery/button/door/directional/south{
 	id = "cmoprivacy";
 	name = "CMO Privacy Shutters";
@@ -12848,6 +12841,7 @@
 	c_tag = "Cargo - head";
 	network = list("ss13","cargo")
 	},
+/obj/machinery/keycard_auth/wall_mounted/directional/south,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/qm)
 "aGE" = (
@@ -13238,6 +13232,7 @@
 /obj/machinery/camera/directional/east{
 	c_tag = "Head of Personel - main"
 	},
+/obj/machinery/keycard_auth/wall_mounted/directional/east,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "aHz" = (
@@ -14497,9 +14492,6 @@
 /obj/effect/mapping_helpers/requests_console/information,
 /obj/item/radio/intercom/directional/north{
 	pixel_y = 34
-	},
-/obj/machinery/keycard_auth/directional/north{
-	pixel_y = 23
 	},
 /obj/structure/extinguisher_cabinet/directional/north{
 	pixel_x = 24;
@@ -16310,9 +16302,6 @@
 	name = "Atmospherics Lockdown";
 	req_access = list("atmospherics")
 	},
-/obj/machinery/keycard_auth/directional/east{
-	pixel_y = 10
-	},
 /obj/machinery/button/door/directional/east{
 	name = "Engineering Lockdown";
 	id = "Engineering";
@@ -16344,6 +16333,10 @@
 	name = "Privacy Shutters Control";
 	pixel_x = 37;
 	pixel_y = 9
+	},
+/obj/machinery/keycard_auth/wall_mounted/directional/east{
+	pixel_x = 26;
+	pixel_y = 10
 	},
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/ce)
@@ -16495,6 +16488,7 @@
 	req_access = list("rd")
 	},
 /obj/machinery/light/directional/north,
+/obj/machinery/keycard_auth/wall_mounted/directional/north,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/command/heads_quarters/rd)
 "aPA" = (
@@ -18418,9 +18412,6 @@
 /obj/machinery/computer/security/qm{
 	dir = 8
 	},
-/obj/machinery/keycard_auth/directional/south{
-	pixel_x = -6
-	},
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/qm)
@@ -19708,10 +19699,8 @@
 /area/station/hallway/primary/central)
 "aXD" = (
 /obj/machinery/suit_storage_unit/hos,
-/obj/machinery/keycard_auth/directional/north{
-	pixel_y = 23
-	},
 /obj/machinery/light_switch/directional/east,
+/obj/machinery/keycard_auth/wall_mounted/directional/north,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hos)
 "aXE" = (
@@ -19803,6 +19792,7 @@
 /obj/machinery/modular_computer/preset/id{
 	dir = 4
 	},
+/obj/machinery/keycard_auth/wall_mounted/directional/west,
 /turf/open/floor/iron/white,
 /area/station/command/heads_quarters/cmo)
 "aXQ" = (
