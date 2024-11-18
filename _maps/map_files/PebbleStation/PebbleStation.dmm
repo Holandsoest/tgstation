@@ -2094,7 +2094,6 @@
 /obj/item/book/granter/action/spell/smoke/lesser{
 	name = "mysterious old book of cloud-chasing"
 	},
-/obj/item/organ/internal/heart,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/office)
 "afi" = (
