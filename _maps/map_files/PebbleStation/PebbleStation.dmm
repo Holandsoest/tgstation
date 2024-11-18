@@ -3375,7 +3375,8 @@
 	dir = 1
 	},
 /obj/machinery/defibrillator_mount/loaded{
-	pixel_x = 26
+	pixel_x = 26;
+	icon_state = "defibrillator_mounted"
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
@@ -3603,7 +3604,8 @@
 /obj/structure/table/reinforced,
 /obj/item/surgery_tray/full,
 /obj/machinery/defibrillator_mount/loaded{
-	pixel_x = 26
+	pixel_x = 26;
+	icon_state = "defibrillator_mounted"
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
