@@ -1,6 +1,7 @@
 ///Contains fish that can be found in the syndicate fishing portal setting as well as the ominous fish case.
 /obj/item/fish/emulsijack
 	name = "toxic emulsijack"
+	fish_id = "emulsijack"
 	desc = "Ah, the terrifying emulsijack. Created in a laboratory, the only real use of this slimey, scaleless fish is for completely ruining a tank."
 	icon_state = "emulsijack"
 	random_case_rarity = FISH_RARITY_GOOD_LUCK_FINDING_THIS
@@ -13,8 +14,12 @@
 	required_temperature_max = MIN_AQUARIUM_TEMP+40
 	beauty = FISH_BEAUTY_BAD
 
+/obj/item/fish/emulsijack/get_fish_taste()
+	return list("raw fish" = 2, "acid" = 1) //no scales
+
 /obj/item/fish/donkfish
 	name = "donk co. company patent donkfish"
+	fish_id = "donkfish"
 	desc = "A lab-grown donkfish. Its invention was an accident for the most part, as it was intended to be consumed in donk pockets. Unfortunately, it tastes horrible, so it has now become a pseudo-mascot."
 	icon_state = "donkfish"
 	random_case_rarity = FISH_RARITY_VERY_RARE
@@ -29,6 +34,7 @@
 
 /obj/item/fish/jumpercable
 	name = "monocloning jumpercable"
+	fish_id = "jumpercable"
 	desc = "A surprisingly useful if nasty looking creation from the syndicate fish labs. Drop one in a tank, and \
 		watch it self-feed and multiply. Generates more and more power as a growing swarm!"
 	icon_state = "jumpercable"
@@ -46,10 +52,16 @@
 		/datum/fish_trait/mixotroph,
 		/datum/fish_trait/electrogenesis,
 	)
+	electrogenesis_power = 0.9 MEGA JOULES
 	beauty = FISH_BEAUTY_UGLY
+
+/obj/item/fish/jumpercable/get_export_price(price, elasticity_percent)
+	//without this, they'd sell for over 6000 each, minimum. That's a lot for a fish that requires no maintance nor partner to farm.
+	return ..() * 0.4
 
 /obj/item/fish/chainsawfish
 	name = "chainsawfish"
+	fish_id = "chainsawfish"
 	desc = "A very, very angry bioweapon, whose sole purpose is to rip and tear."
 	icon = 'icons/obj/aquarium/wide.dmi'
 	icon_state = "chainsawfish"
@@ -60,7 +72,7 @@
 	block_chance = 15
 	attack_verb_continuous = list("saws", "tears", "lacerates", "cuts", "chops", "dices")
 	attack_verb_simple = list("saw", "tear", "lacerate", "cut", "chop", "dice")
-	hitsound = 'sound/weapons/chainsawhit.ogg'
+	hitsound = 'sound/items/weapons/chainsawhit.ogg'
 	sharpness = SHARP_EDGED
 	tool_behaviour = TOOL_SAW
 	toolspeed = 0.5
@@ -92,6 +104,9 @@
 /obj/item/fish/chainsawfish/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/update_icon_updates_onmob)
+
+/obj/item/fish/chainsawfish/get_fish_taste()
+	return list("raw fish" = 2.5, "anger" = 1)
 
 /obj/item/fish/chainsawfish/update_icon_state()
 	if(status == FISH_DEAD)
@@ -168,13 +183,14 @@
 
 /obj/item/fish/pike/armored
 	name = "armored pike"
+	fish_id = "armored_pike"
 	desc = "A long-bodied, metal-clad predator with a snout that almost looks like an halberd. Definitely a weapon to swing around."
 	icon_state = "armored_pike"
 	inhand_icon_state = "armored_pike"
 	attack_verb_continuous = list("attacks", "pokes", "jabs", "tears", "lacerates", "gores")
 	attack_verb_simple = list("attack", "poke", "jab", "tear", "lacerate", "gore")
-	hitsound = 'sound/weapons/bladeslice.ogg'
-	block_sound = 'sound/weapons/parry.ogg'
+	hitsound = 'sound/items/weapons/bladeslice.ogg'
+	block_sound = 'sound/items/weapons/parry.ogg'
 	force = 20
 	sharpness = SHARP_EDGED
 	wound_bonus = -15
@@ -192,6 +208,7 @@
 	beauty = FISH_BEAUTY_GREAT
 	fishing_difficulty_modifier = 20
 	fish_traits = list(/datum/fish_trait/carnivore, /datum/fish_trait/predator, /datum/fish_trait/aggressive, /datum/fish_trait/picky_eater, /datum/fish_trait/stinger)
+	evolution_types = null
 	compatible_types = list(/obj/item/fish/pike)
 	favorite_bait = list(
 		list(
@@ -201,7 +218,13 @@
 		/obj/item/fish,
 	)
 
-/obj/item/fish/swordfish/get_force_rank()
+/obj/item/fish/pike/armored/get_fish_taste()
+	return list("raw fish" = 2.5, "metal" = 1)
+
+/obj/item/fish/pike/armored/get_fish_taste()
+	return list("cooked fish" = 2.5, "metal" = 1)
+
+/obj/item/fish/pike/armored/get_force_rank()
 	switch(w_class)
 		if(WEIGHT_CLASS_TINY)
 			force -= 11

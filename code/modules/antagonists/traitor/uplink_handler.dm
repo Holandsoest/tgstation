@@ -69,10 +69,6 @@
 	SEND_SIGNAL(src, COMSIG_UPLINK_HANDLER_ON_UPDATE)
 	return
 
-/// Checks if traitor has enough reputation to purchase an item
-/datum/uplink_handler/proc/not_enough_reputation(datum/uplink_item/to_purchase)
-	return has_progression && progression_points < to_purchase.progression_minimum
-
 /// Checks for uplink flags as well as items restricted to roles and species
 /datum/uplink_handler/proc/check_if_restricted(datum/uplink_item/to_purchase)
 	if(!to_purchase.can_be_bought(src))
@@ -104,7 +100,7 @@
 
 	var/current_stock = item_stock[to_purchase.stock_key]
 	var/stock = current_stock != null ? current_stock : INFINITY
-	if(telecrystals < to_purchase.cost || stock <= 0 || not_enough_reputation(to_purchase))
+	if(telecrystals < to_purchase.real_cost(src) || stock <= 0)
 		return FALSE
 
 	return TRUE
@@ -116,7 +112,7 @@
 	if(to_purchase.limited_stock != -1 && !(to_purchase.stock_key in item_stock))
 		item_stock[to_purchase.stock_key] = to_purchase.limited_stock
 
-	telecrystals -= to_purchase.cost
+	telecrystals -= to_purchase.real_cost(src)
 	to_purchase.purchase(user, src, source)
 
 	if(to_purchase.stock_key in item_stock)
@@ -255,7 +251,7 @@
 	if(!(to_take in potential_objectives))
 		return
 
-	user.playsound_local(get_turf(user), 'sound/traitor/objective_taken.ogg', vol = 100, vary = FALSE, channel = CHANNEL_TRAITOR)
+	user.playsound_local(get_turf(user), 'sound/music/antag/traitor/objective_taken.ogg', vol = 100, vary = FALSE, channel = CHANNEL_TRAITOR)
 	to_take.on_objective_taken(user)
 	to_take.objective_state = OBJECTIVE_STATE_ACTIVE
 	potential_objectives -= to_take

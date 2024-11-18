@@ -1,5 +1,6 @@
 /obj/item/fish/clownfish
 	name = "clownfish"
+	fish_id = "clownfish"
 	desc = "Clownfish catch prey by swimming onto the reef, attracting larger fish, and luring them back to the anemone. The anemone will sting and eat the larger fish, leaving the remains for the clownfish."
 	icon_state = "clownfish"
 	required_fluid_type = AQUARIUM_FLUID_SALTWATER
@@ -14,8 +15,12 @@
 	required_temperature_min = MIN_AQUARIUM_TEMP+22
 	required_temperature_max = MIN_AQUARIUM_TEMP+30
 
+/obj/item/fish/clownfish/get_fish_taste()
+	return list("raw fish" = 2, "something funny" = 1)
+
 /obj/item/fish/clownfish/lube
 	name = "lubefish"
+	fish_id = "lube"
 	desc = "A clownfish exposed to cherry-flavored lube for far too long. First discovered the days following a cargo incident around the seas of Europa, when thousands of thousands of thousands..."
 	icon_state = "lubefish"
 	random_case_rarity = FISH_RARITY_VERY_RARE
@@ -28,6 +33,7 @@
 
 /obj/item/fish/cardinal
 	name = "cardinalfish"
+	fish_id = "cardinal"
 	desc = "Cardinalfish are often found near sea urchins, where the fish hide when threatened."
 	icon_state = "cardinalfish"
 	sprite_width = 6
@@ -42,6 +48,7 @@
 
 /obj/item/fish/greenchromis
 	name = "green chromis"
+	fish_id = "greenchromis"
 	desc = "The Chromis can vary in color from blue to green depending on the lighting and distance from the lights."
 	icon_state = "greenchromis"
 	sprite_width = 5
@@ -57,6 +64,7 @@
 
 /obj/item/fish/firefish
 	name = "firefish goby"
+	fish_id = "firefish"
 	desc = "To communicate in the wild, the firefish uses its dorsal fin to alert others of potential danger."
 	icon_state = "firefish"
 	sprite_width = 5
@@ -72,6 +80,7 @@
 
 /obj/item/fish/pufferfish
 	name = "pufferfish"
+	fish_id = "pufferfish"
 	desc = "They say that one pufferfish contains enough toxins to kill 30 people, although in the last few decades they've been genetically engineered en masse to be less poisonous."
 	icon_state = "pufferfish"
 	required_fluid_type = AQUARIUM_FLUID_SALTWATER
@@ -88,6 +97,7 @@
 
 /obj/item/fish/lanternfish
 	name = "lanternfish"
+	fish_id = "lanternfish"
 	desc = "Typically found in areas below 6600 feet below the surface of the ocean, they live in complete darkness."
 	icon_state = "lanternfish"
 	required_fluid_type = AQUARIUM_FLUID_SALTWATER
@@ -104,6 +114,7 @@
 
 /obj/item/fish/stingray
 	name = "stingray"
+	fish_id = "stingray"
 	desc = "A type of ray, most known for its venomous stinger. Despite that, They're normally docile, if not a bit easily frightened."
 	icon_state = "stingray"
 	stable_population = 4
@@ -118,6 +129,7 @@
 
 /obj/item/fish/swordfish
 	name = "swordfish"
+	fish_id = "swordfish"
 	desc = "A large billfish, most famous for its elongated bill, while also fairly popular for cooking, and as a fearsome weapon in the hands of a veteran spess-fisherman."
 	icon = 'icons/obj/aquarium/wide.dmi'
 	icon_state = "swordfish"
@@ -126,8 +138,8 @@
 	sharpness = SHARP_EDGED
 	attack_verb_continuous = list("slashes", "cuts", "pierces")
 	attack_verb_simple = list("slash", "cut", "pierce")
-	block_sound = 'sound/weapons/parry.ogg'
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	block_sound = 'sound/items/weapons/parry.ogg'
+	hitsound = 'sound/items/weapons/rapierhit.ogg'
 	demolition_mod = 0.75
 	attack_speed = 1 SECONDS
 	block_chance = 50
@@ -214,6 +226,7 @@
 
 /obj/item/fish/squid
 	name = "squid"
+	fish_id = "squid"
 	desc = "An elongated mollusk with eight tentacles, natural camouflage and ink clouds to spray at predators. One of the most intelligent, well-equipped invertebrates out there."
 	icon_state = "squid"
 	sprite_width = 4
@@ -227,9 +240,16 @@
 	required_temperature_max = MIN_AQUARIUM_TEMP+26
 	fish_traits = list(/datum/fish_trait/heavy, /datum/fish_trait/carnivore, /datum/fish_trait/predator, /datum/fish_trait/ink, /datum/fish_trait/camouflage, /datum/fish_trait/wary)
 
+/obj/item/fish/squid/get_fish_taste()
+	return list("raw mollusk" = 2)
+
+/obj/item/fish/squid/get_fish_taste_cooked()
+	return list("cooked mollusk" = 2, "tenderness" = 0.5)
+
 /obj/item/fish/monkfish
 	name = "monkfish"
-	desc = "A member of the Lophiid family of anglerfish. It goes by several different names, however none of them will make it look any prettier, nor any less delicious."
+	fish_id = "monkfish"
+	desc = "A member of the Lophiid family of anglerfish. It goes by several different names, however none of them will make it look any prettier, nor be any less delicious."
 	icon_state = "monkfish"
 	required_fluid_type = AQUARIUM_FLUID_SALTWATER
 	sprite_height = 7
@@ -255,6 +275,7 @@
 
 /obj/item/fish/plaice
 	name = "plaice"
+	fish_id = "plaice"
 	desc = "Perhaps the most prominent flatfish in the space-market. Nature really pulled out the rolling pin on this one."
 	icon_state = "plaice"
 	sprite_height = 7

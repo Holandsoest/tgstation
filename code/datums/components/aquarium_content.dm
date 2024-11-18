@@ -53,7 +53,6 @@
 	ADD_TRAIT(parent, TRAIT_FISH_CASE_COMPATIBILE, REF(src))
 	RegisterSignal(parent, COMSIG_TRY_INSERTING_IN_AQUARIUM, PROC_REF(is_ready_to_insert))
 	RegisterSignal(parent, COMSIG_MOVABLE_MOVED, PROC_REF(enter_aquarium))
-	RegisterSignal(parent, COMSIG_FISH_PETTED, PROC_REF(on_fish_petted))
 
 	if(isfish(parent))
 		RegisterSignal(parent, COMSIG_FISH_STATUS_CHANGED, PROC_REF(on_fish_status_changed))
@@ -168,11 +167,6 @@
 		current_aquarium.free_layer(vc_obj.layer)
 	vc_obj.layer = current_aquarium.request_layer(vc_obj.layer_mode)
 
-/datum/component/aquarium_content/proc/on_fish_petted()
-	SIGNAL_HANDLER
-
-	new /obj/effect/temp_visual/heart(get_turf(parent))
-
 /datum/component/aquarium_content/proc/on_removed(obj/structure/aquarium/source, atom/movable/gone, direction)
 	SIGNAL_HANDLER
 	if(parent != gone)
@@ -185,13 +179,9 @@
 	remove_visual_from_aquarium()
 	current_aquarium = null
 
-///The visual overlay of the aquarium content. It holds a few vars that we can modity them during signals.
+///The visual overlay of the aquarium content. It can hold a couple vars that we can modify through signal procs.
 /obj/effect/aquarium
 	layer = 0 //set on set_vc_base_position
-	/// Base px offset of the visual object in current aquarium aka current base position
-	var/base_px = 0
-	/// Base px offset of the visual object in current aquarium aka current base position
-	var/base_py = 0
 	/// How the visual will be layered
 	var/layer_mode = AQUARIUM_LAYER_MODE_AUTO
 
