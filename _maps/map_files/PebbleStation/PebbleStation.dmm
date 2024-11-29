@@ -3412,7 +3412,7 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/tar,
+/turf/open/sludge,
 /area/station/maintenance/starboard/central)
 "aiz" = (
 /obj/structure/cable,
@@ -17071,7 +17071,7 @@
 "aQW" = (
 /obj/effect/spawner/random/maintenance/two,
 /obj/effect/spawner/random/structure/closet_maintenance,
-/turf/open/tar,
+/turf/open/floor/plating,
 /area/station/maintenance/starboard/central)
 "aQX" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
@@ -17413,7 +17413,7 @@
 /area/station/command/bridge)
 "aRY" = (
 /obj/item/kirbyplants/organic/plant5,
-/turf/open/tar,
+/turf/open/floor/plating,
 /area/station/maintenance/starboard/central)
 "aRZ" = (
 /obj/effect/landmark/blobstart,
@@ -18966,7 +18966,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/tar,
+/turf/open/lava,
 /area/station/maintenance/starboard/central)
 "aVM" = (
 /obj/item/wheelchair{
@@ -20884,9 +20884,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/science/xenobiology)
-"kmV" = (
-/turf/open/tar,
-/area/station/maintenance/starboard/central)
 "kte" = (
 /obj/effect/spawner/random/medical/two_percent_xeno_egg_spawner,
 /turf/open/floor/engine/xenobio,
@@ -55512,7 +55509,7 @@ anz
 aWX
 aQW
 aRY
-kmV
+ahc
 ahc
 awx
 ahc
