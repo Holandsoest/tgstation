@@ -61,14 +61,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "ag" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "ah" = (
@@ -79,14 +72,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/hallway/floor1/aft)
-"ai" = (
-/obj/effect/decal/cleanable/blood/gibs/core{
-	color = "#808080";
-	icon_state = "gibmid3";
-	name = "rotting gibs"
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "aj" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/white,
@@ -169,22 +154,14 @@
 	piping_layer = 4;
 	pipe_color = "#0000FF"
 	},
+/obj/item/mod/control{
+	dir = 4;
+	name = "standard atmospheric MOD control unit";
+	pixel_x = -2;
+	pixel_y = -2
+	},
 /turf/open/floor/iron/dark/textured,
 /area/station/science/robotics/lab)
-"aI" = (
-/obj/item/stack/tile/iron/base{
-	pixel_x = -4;
-	pixel_y = 1;
-	amount = 50
-	},
-/obj/item/stack/rods/fifty{
-	dir = 8;
-	pixel_y = -2;
-	amount = 19
-	},
-/obj/structure/window/spawner/directional/south,
-/turf/open/floor/plating,
-/area/station/cargo/miningoffice)
 "aJ" = (
 /obj/machinery/mineral/ore_redemption{
 	dir = 4;
@@ -195,24 +172,14 @@
 /turf/open/floor/iron,
 /area/station/cargo)
 "aM" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 5;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "5_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
 /obj/structure/window/plasma/spawner/directional/east,
 /obj/machinery/power/energy_accumulator/tesla_coil,
 /obj/structure/cable{
 	color = "#ffff00";
 	icon_state = "l2-1-8-node"
 	},
-/obj/effect/overlay/cap_visual{
-	color = "#0000ff";
-	icon_state = "1035_2"
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 5
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
@@ -273,14 +240,7 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/starboard/fore)
 "aX" = (
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 1;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
-	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /turf/open/space/basic,
 /area/space/nearstation)
 "aY" = (
@@ -294,14 +254,6 @@
 /obj/machinery/recharge_station,
 /turf/open/floor/iron/textured_half,
 /area/station/science/robotics/lab)
-"ba" = (
-/obj/item/stack/sheet/mineral/titanium{
-	pixel_x = 5;
-	pixel_y = -3;
-	amount = 16
-	},
-/turf/open/floor/plating,
-/area/station/cargo/miningoffice)
 "bb" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -326,35 +278,22 @@
 	},
 /turf/open/floor/plating,
 /area/station/hallway/floor1/aft)
-"bg" = (
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
+"bd" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "d";
+	name = "letter"
 	},
 /turf/open/floor/plating,
-/area/station/engineering/break_room)
+/area/station/cargo/storage)
 "bh" = (
 /obj/structure/frame/machine{
 	dir = 8
 	},
 /turf/open/floor/iron,
 /area/station/command/bridge)
-"bj" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor3"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "bk" = (
 /obj/machinery/computer/communications,
 /turf/open/floor/iron,
@@ -414,14 +353,6 @@
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen/coldroom)
-"bt" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_1-old"
-	},
-/obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "bv" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -432,36 +363,8 @@
 "by" = (
 /turf/closed/wall,
 /area/station/medical/chemistry)
-"bA" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	color = "#ff0000";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "red scrubbers pipe"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_3-old"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor2"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "bB" = (
 /obj/machinery/door/airlock/engineering/glass,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
-"bC" = (
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_1-old"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor3"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit,
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
 "bD" = (
@@ -480,19 +383,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/science/genetics)
-"bM" = (
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor6"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_4-old"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
+"bN" = (
+/obj/machinery/smartfridge/extract,
+/turf/open/floor/iron,
+/area/station/science/xenobiology)
 "bO" = (
 /obj/structure/closet/crate,
 /obj/machinery/light/small/directional/east,
@@ -530,32 +424,19 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "bQ" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 1;
-	icon_state = "vent_out";
-	name = "�Science North Hall blue air vent HQUe2";
-	pixel_x = 5;
-	id_tag = "HQUe2";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
 	},
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology/hallway)
 "bR" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 10;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "10_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden{
+	dir = 10
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "bT" = (
-/obj/structure/girder,
-/turf/open/floor/plating,
+/turf/closed/wall/r_wall,
 /area/station/cargo/storage)
 "bV" = (
 /obj/structure/cable,
@@ -564,13 +445,6 @@
 	},
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/starboard/fore)
-"bW" = (
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor4"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "bY" = (
 /obj/structure/window/spawner/directional/south,
 /turf/open/floor/iron,
@@ -652,14 +526,8 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "cg" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff7b00";
-	dir = 10;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "10_2";
-	name = "orange pipe";
-	piping_layer = 2;
-	pipe_color = "#FF7B00"
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden{
+	dir = 10
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -708,23 +576,8 @@
 /obj/machinery/power/terminal{
 	dir = 4
 	},
-/obj/item/mod/module/flashlight{
-	pixel_x = -5
-	},
 /turf/open/floor/iron/white/textured,
 /area/station/science/robotics/lab)
-"co" = (
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
-/obj/effect/decal/cleanable/blood/gibs{
-	dir = 4;
-	icon_state = "gib4"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "cp" = (
 /obj/structure/closet{
 	anchored = 1
@@ -786,8 +639,9 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/port/fore)
 "cA" = (
-/obj/structure/frame/computer{
-	dir = 1
+/obj/machinery/computer/shuttle/mining{
+	dir = 1;
+	req_access = null
 	},
 /obj/structure/window/spawner/directional/south,
 /turf/open/floor/plating,
@@ -799,6 +653,14 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white/textured_large,
 /area/station/medical/surgery)
+"cD" = (
+/obj/item/choice_beacon/music{
+	dir = 1;
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/turf/open/floor/iron/textured_half,
+/area/station/science/robotics/lab)
 "cE" = (
 /obj/machinery/nuclearbomb/selfdestruct,
 /obj/structure/cable,
@@ -807,12 +669,7 @@
 /area/station/ai_monitored/command/nuke_storage)
 "cG" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 10;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
+	dir = 10
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -862,6 +719,20 @@
 /obj/effect/turf_decal/box/red,
 /turf/open/floor/iron,
 /area/station/cargo)
+"cZ" = (
+/obj/item/stock_parts/power_store/cell/bluespace{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/stock_parts/power_store/cell/super{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/item/stock_parts/power_store/cell/bluespace{
+	pixel_y = -2
+	},
+/turf/open/floor/iron/textured_half,
+/area/station/science/robotics/lab)
 "dc" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -936,6 +807,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/science/genetics)
+"dx" = (
+/obj/effect/decal/cleanable/rubble,
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "dy" = (
 /obj/effect/turf_decal/stripes/red/line,
 /turf/open/floor/iron/dark/diagonal,
@@ -982,17 +857,23 @@
 	},
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
-	dir = 9;
+	dir = 11;
 	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "9_4";
+	icon_state = "11_4";
 	name = "blue pipe";
 	piping_layer = 4;
 	pipe_color = "#0000FF"
 	},
-/obj/item/electronics/firelock{
-	dir = 4;
-	pixel_x = -4;
-	pixel_y = 6
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#ff0000";
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "3_2";
+	name = "red pipe";
+	piping_layer = 2;
+	pipe_color = "#FF0000"
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
@@ -1002,17 +883,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/hallway/primary)
-"dJ" = (
-/obj/item/mod/module/organizer{
-	pixel_x = -1;
-	pixel_y = -1
-	},
-/obj/item/mod/module/status_readout{
-	pixel_x = -2;
-	pixel_y = -6
-	},
-/turf/open/floor/iron/white/textured,
-/area/station/science/robotics/lab)
 "dN" = (
 /obj/effect/mapping_helpers/dead_body_placer,
 /obj/structure/disposalpipe/segment{
@@ -1054,25 +924,13 @@
 /turf/open/floor/iron/textured,
 /area/station/ai_monitored/command/storage/eva)
 "dV" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 15;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "15_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
 /obj/structure/window/plasma/spawner/directional/east,
 /obj/machinery/power/energy_accumulator/grounding_rod,
 /obj/structure/cable{
 	color = "#ffff00";
 	icon_state = "l2-1-2"
 	},
-/obj/effect/overlay/cap_visual{
-	color = "#0000ff";
-	icon_state = "1035_2"
-	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "dW" = (
@@ -1082,46 +940,26 @@
 /turf/open/floor/plating,
 /area/station/hallway/primary/port)
 "dX" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 9;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "9_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
 /obj/machinery/power/energy_accumulator/tesla_coil,
 /obj/structure/cable{
 	color = "#ffff00";
 	icon_state = "l2-1-4-node"
 	},
-/obj/effect/overlay/cap_visual{
-	color = "#00ff00";
-	icon_state = "2055_2"
-	},
 /obj/structure/window/plasma/spawner/directional/west,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden{
+	dir = 9
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "dY" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 6;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "6_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
 /obj/structure/window/plasma/spawner/directional/east,
 /obj/machinery/power/energy_accumulator/tesla_coil,
 /obj/structure/cable{
 	color = "#ffff00";
 	icon_state = "l2-2"
 	},
-/obj/effect/overlay/cap_visual{
-	color = "#0000ff";
-	icon_state = "1035_2"
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 6
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
@@ -1131,13 +969,6 @@
 	},
 /turf/open/floor/iron/white/textured,
 /area/station/science/robotics/lab)
-"ec" = (
-/obj/machinery/conveyor{
-	dir = 10;
-	icon_state = "conveyor1"
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "ed" = (
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /obj/structure/closet{
@@ -1188,29 +1019,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
-"eh" = (
-/obj/structure/closet{
-	dir = 8
-	},
-/obj/item/stack/conveyor{
-	pixel_x = -2;
-	pixel_y = 6;
-	amount = 20
-	},
-/obj/item/stack/conveyor{
-	pixel_x = 4;
-	pixel_y = -1;
-	amount = 30
-	},
-/obj/item/conveyor_switch_construct{
-	pixel_x = -6;
-	pixel_y = 4
-	},
-/obj/item/conveyor_switch_construct,
-/obj/item/conveyor_switch_construct,
-/obj/item/conveyor_switch_construct,
-/turf/open/floor/plating,
-/area/station/hallway/primary/starboard)
 "ej" = (
 /turf/closed/wall,
 /area/station/engineering/break_room)
@@ -1222,10 +1030,6 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/starboard/fore)
-"eo" = (
-/obj/item/storage/box/donkpockets/donkpocketberry,
-/turf/open/floor/iron/dark/textured,
-/area/station/science/robotics/lab)
 "eq" = (
 /obj/machinery/modular_computer/preset/cargochat/medical{
 	dir = 1
@@ -1349,21 +1153,9 @@
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "eQ" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 1;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
-	},
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 4;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
+	dir = 4
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -1371,12 +1163,6 @@
 /obj/machinery/hydroponics/constructable,
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
-"eW" = (
-/obj/structure/girder{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/station/cargo/storage)
 "eY" = (
 /obj/machinery/power/solar_control{
 	id = "forestarboard";
@@ -1458,25 +1244,20 @@
 	color = "#ffff00";
 	icon_state = "l2-4"
 	},
+/obj/structure/closet,
+/obj/item/stack/sheet/glass/fifty{
+	dir = 1;
+	icon_state = "sheet-glass_3";
+	pixel_x = 6;
+	pixel_y = -6;
+	amount = 34
+	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "fs" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/maintenance/solars/starboard/aft)
-"ft" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_3-old"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "fv" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -1517,21 +1298,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/telecomms,
 /area/station/tcommsat/server)
-"fB" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "i";
-	name = "letter";
-	pixel_x = 2;
-	pixel_y = -14
-	},
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "l";
-	name = "letter";
-	pixel_x = 15;
-	pixel_y = -15
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "fC" = (
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
@@ -1569,15 +1335,10 @@
 /turf/open/floor/iron,
 /area/station/engineering/engine_smes)
 "fG" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 4;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
+	dir = 4
 	},
+/obj/structure/lattice,
 /turf/open/space/basic,
 /area/space/nearstation)
 "fI" = (
@@ -1614,16 +1375,21 @@
 	},
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/port/aft)
+"fR" = (
+/obj/machinery/conveyor{
+	id = "Hallway_conv";
+	dir = 4
+	},
+/obj/machinery/conveyor{
+	id = "Hallway_conv";
+	dir = 4
+	},
+/turf/open/floor/noslip,
+/area/station/hallway/primary/port)
 "fS" = (
 /obj/structure/window/reinforced/plasma/fulltile,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
-"fW" = (
-/obj/structure/girder{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/station/cargo/storage)
 "fX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1757,13 +1523,6 @@
 /obj/item/surgery_tray/full,
 /turf/open/floor/iron/white/textured_large,
 /area/station/medical/surgery)
-"gD" = (
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-2-8"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "gE" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable,
@@ -1808,45 +1567,16 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "gT" = (
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-1-2"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	color = "#ff0000";
 	dir = 14;
 	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
 	icon_state = "14_2";
 	name = "red scrubbers pipe"
-	},
-/obj/item/food/deadmouse{
-	color = "#3a3a3a";
-	icon_state = "mouse_brown_dead";
-	name = "mouse"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_1-old"
-	},
-/obj/effect/decal/cleanable/vomit,
-/obj/item/stack/cable_coil{
-	color = "#ffff00";
-	icon_state = "coil1";
-	name = "cable piece";
-	pixel_x = -2;
-	amount = 1
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
-"gU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_1-old"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor2"
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
 	},
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
@@ -1861,27 +1591,6 @@
 "gY" = (
 /turf/closed/wall/r_wall,
 /area/station/tcommsat/server)
-"hc" = (
-/obj/item/stack/sheet/plastic{
-	icon_state = "sheet-plastic_3";
-	pixel_x = -1;
-	pixel_y = -2;
-	amount = 50
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/station/cargo/storage)
-"hh" = (
-/obj/effect/decal/cleanable/blood/gibs{
-	color = "#808080";
-	dir = 1;
-	icon_state = "gib4";
-	name = "rotting gibs"
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "hj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1926,10 +1635,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/textured,
 /area/station/ai_monitored/command/nuke_storage)
-"hv" = (
-/obj/structure/frame/computer,
-/turf/open/floor/plating,
-/area/station/cargo/storage)
 "hx" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/fans/tiny,
@@ -2007,22 +1712,8 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/station/cargo)
-"hF" = (
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-1-8"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "hH" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "hK" = (
@@ -2118,16 +1809,6 @@
 /obj/machinery/biogenerator,
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
-"hX" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	icon_state = "scrub_on";
-	name = "��Engineering Foyer omni air scrubber LNO4e";
-	pixel_x = -5;
-	id_tag = "LNO4e"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "ia" = (
 /turf/closed/wall,
 /area/station/service/hydroponics)
@@ -2139,13 +1820,8 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "id" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	dir = 4;
-	icon_state = "scrub_on";
-	name = "�Xenobiology red air scrubber zQgiP";
-	id_tag = "zQgiP";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron,
@@ -2177,7 +1853,10 @@
 /area/station/cargo)
 "ik" = (
 /obj/machinery/door/airlock/engineering/glass,
-/obj/structure/cable,
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-1-2"
+	},
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
 "il" = (
@@ -2210,12 +1889,7 @@
 /area/station/science/breakroom)
 "in" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
-	color = "#454545";
-	dir = 1;
-	icon_state = "pipe11-2";
-	name = "dark junction";
-	piping_layer = 2;
-	pipe_color = "#454545"
+	dir = 1
 	},
 /turf/closed/wall,
 /area/station/engineering/supermatter/room)
@@ -2240,42 +1914,11 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary)
-"iv" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff0000";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "red pipe";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
-	},
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_4";
-	name = "blue pipe";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
-	},
-/obj/item/kinetic_crusher{
-	pixel_x = -6;
-	pixel_y = 1
-	},
-/turf/open/floor/iron/dark/textured,
-/area/station/science/robotics/lab)
 "iy" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
 /obj/machinery/light/directional/south,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden{
+	dir = 4
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "iE" = (
@@ -2357,14 +2000,8 @@
 /turf/open/space/basic,
 /area/station/solars/starboard/fore)
 "jb" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	dir = 1;
-	icon_state = "scrub_on";
-	name = "�Science Break Room red air scrubber TkRUA";
-	pixel_x = -5;
-	id_tag = "TkRUA";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
 	},
 /turf/open/floor/plating/airless,
 /area/station/science/breakroom)
@@ -2391,19 +2028,6 @@
 	piping_layer = 4;
 	pipe_color = "#0000FF"
 	},
-/obj/effect/decal/cleanable/blood/gibs{
-	color = "#808080";
-	icon_state = "gib2";
-	name = "rotting gibs"
-	},
-/obj/effect/decal/cleanable/blood/gibs/core{
-	color = "#808080";
-	icon_state = "gibmid2";
-	name = "rotting gibs"
-	},
-/obj/effect/decal/cleanable/blood/footprints{
-	icon_state = ""
-	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "jf" = (
@@ -2415,22 +2039,6 @@
 /obj/item/clothing/suit/hooded/wintercoat/miner,
 /turf/open/floor/iron,
 /area/station/cargo)
-"jh" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff0000";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "red pipe";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
-	},
-/obj/machinery/conveyor{
-	dir = 4;
-	icon_state = "conveyor1"
-	},
-/obj/item/storage/box/donkpockets/donkpockethonk,
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "ji" = (
 /obj/structure/closet/firecloset/full,
 /turf/open/floor/plating,
@@ -2492,6 +2100,15 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo)
+"jt" = (
+/obj/item/stack/sheet/iron{
+	dir = 4;
+	pixel_x = -4;
+	pixel_y = 5;
+	amount = 11
+	},
+/turf/open/floor/plating,
+/area/station/hallway/primary/starboard)
 "jx" = (
 /obj/machinery/telecomms/bus/preset_four,
 /turf/open/floor/circuit/green/telecomms/mainframe,
@@ -2509,13 +2126,8 @@
 /area/station/engineering/atmos)
 "jB" = (
 /obj/machinery/conveyor{
-	dir = 10;
-	icon_state = "conveyor1"
-	},
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
+	id = "Hallway_conv";
+	dir = 10
 	},
 /turf/open/floor/noslip,
 /area/station/hallway/primary/port)
@@ -2532,37 +2144,6 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/engineering/gravity_generator)
-"jI" = (
-/obj/effect/decal/cleanable/blood{
-	color = "#808080";
-	name = "dried blood"
-	},
-/obj/item/food/deadmouse/moldy{
-	dir = 1;
-	pixel_x = -9;
-	pixel_y = -3
-	},
-/obj/item/food/deadmouse/moldy{
-	dir = 1;
-	pixel_x = -2;
-	pixel_y = 12
-	},
-/obj/item/food/deadmouse/moldy{
-	dir = 1;
-	pixel_x = 8;
-	pixel_y = -6
-	},
-/obj/item/stack/sheet/animalhide/monkey{
-	dir = 1;
-	pixel_x = -5;
-	pixel_y = 7
-	},
-/obj/effect/decal/cleanable/trail_holder,
-/obj/effect/decal/cleanable/ants{
-	icon_state = "ants_2"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "jJ" = (
 /obj/machinery/door/airlock/mining/glass{
 	name = "Cargo Bay"
@@ -2588,6 +2169,10 @@
 	piping_layer = 4;
 	pipe_color = "#0000FF"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/station/hallway/primary/starboard)
 "jK" = (
@@ -2629,13 +2214,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/station/cargo)
-"jX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor4"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "jY" = (
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
@@ -2678,14 +2256,6 @@
 /obj/machinery/door/airlock/medical/glass,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
-"kc" = (
-/obj/effect/decal/cleanable/blood/gibs{
-	color = "#808080";
-	dir = 4;
-	name = "rotting gibs"
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "ke" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -2703,8 +2273,8 @@
 /area/station/hallway/secondary/entry)
 "kl" = (
 /obj/machinery/conveyor{
-	dir = 8;
-	icon_state = "conveyor1"
+	id = "Hallway_conv";
+	dir = 8
 	},
 /turf/open/floor/noslip,
 /area/station/hallway/primary/port)
@@ -2736,10 +2306,7 @@
 /turf/open/floor/iron/herringbone,
 /area/station/engineering/storage_shared)
 "kt" = (
-/obj/machinery/camera/autoname/deconstructed{
-	dir = 4;
-	icon_state = "camera"
-	},
+/obj/machinery/camera/directional/east,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "ku" = (
@@ -2774,34 +2341,33 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/station/medical/morgue)
 "kA" = (
-/obj/machinery/conveyor_switch{
-	icon_state = "switch-fwd"
-	},
-/obj/effect/decal/cleanable/blood/gibs{
-	color = "#808080";
-	dir = 1;
-	icon_state = "gib6";
-	name = "rotting gibs"
-	},
-/obj/effect/decal/cleanable/blood/gibs{
-	color = "#808080";
-	icon_state = "gib2";
-	name = "rotting gibs"
-	},
 /turf/open/floor/light,
 /area/station/hallway/primary/port)
+"kC" = (
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-4-8"
+	},
+/obj/item/slimecross/stabilized/purple{
+	color = "#b19cd9";
+	name = "stabilized purple extract";
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/slimecross/stabilized/lightpink{
+	color = "#ffb6c1";
+	name = "stabilized light-pink extract";
+	pixel_x = -3;
+	pixel_y = -2
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "kG" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "kK" = (
-/obj/machinery/atmospherics/components/unary/passive_vent{
-	icon_state = "passive_vent";
-	name = "orange passive vent";
-	pixel_x = -5;
-	piping_layer = 2;
-	pipe_color = "#FF7B00"
-	},
+/obj/machinery/atmospherics/components/unary/passive_vent,
 /turf/open/space/basic,
 /area/space/nearstation)
 "kL" = (
@@ -2923,14 +2489,6 @@
 /obj/machinery/power/terminal,
 /turf/open/floor/iron/white/small,
 /area/station/science/lobby)
-"kU" = (
-/obj/item/bikehorn{
-	dir = 4;
-	pixel_x = -4;
-	pixel_y = 2
-	},
-/turf/open/floor/plating,
-/area/station/hallway/primary/starboard)
 "kV" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3090,21 +2648,6 @@
 /obj/structure/railing,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
-"lw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/obj/item/stack/cable_coil{
-	color = "#ffff00";
-	icon_state = "coil1";
-	name = "cable piece";
-	pixel_x = 1;
-	pixel_y = 2;
-	amount = 1
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "lx" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -3142,17 +2685,17 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
-"lH" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
+"lD" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor3"
-	},
-/obj/effect/decal/cleanable/vomit,
 /turf/open/floor/plating,
-/area/station/engineering/break_room)
+/area/station/cargo/storage)
+"lE" = (
+/obj/machinery/door/airlock/engineering,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
 "lI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3170,9 +2713,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
-"lL" = (
-/turf/closed/wall/mineral/abductor,
-/area/station/hallway/primary/port)
 "lN" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -3195,32 +2735,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology)
-"ma" = (
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-noconnection"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	color = "#ff0000";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "red scrubbers pipe"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	color = "#0000ff";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_4";
-	name = "blue air supply pipe"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "mc" = (
 /obj/machinery/rnd/production/protolathe/department/medical,
 /obj/effect/turf_decal/tile/blue/fourcorners,
@@ -3243,14 +2757,8 @@
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "mf" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	dir = 4;
-	icon_state = "scrub_on";
-	name = "�Science North Hall red air scrubber jgUBh";
-	pixel_y = -5;
-	id_tag = "jgUBh";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
 	},
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology/hallway)
@@ -3280,22 +2788,32 @@
 /obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/station/service/bar)
-"ml" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	color = "#0000ff";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_4";
-	name = "blue air supply pipe"
-	},
-/obj/effect/decal/cleanable/vomit,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "mm" = (
 /obj/machinery/light/directional/south,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-4-8"
+	},
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#0000ff";
+	dir = 4;
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "12_4";
+	name = "blue pipe";
+	piping_layer = 4;
+	pipe_color = "#0000FF"
+	},
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#ff0000";
+	dir = 4;
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "12_2";
+	name = "red pipe";
+	piping_layer = 2;
+	pipe_color = "#FF0000"
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
@@ -3305,24 +2823,8 @@
 /area/station/hallway/primary/port)
 "mp" = (
 /obj/machinery/conveyor{
-	dir = 4;
-	icon_state = "conveyor1"
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -1
-	},
-/obj/item/food/deadmouse{
-	dir = 8;
-	name = "mouse";
-	pixel_x = 2;
-	pixel_y = -6
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -1
+	id = "Kitchen_conv";
+	dir = 4
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
@@ -3363,16 +2865,6 @@
 /obj/effect/landmark/observer_start,
 /turf/open/floor/glass,
 /area/station/hallway/primary)
-"my" = (
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor6"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "mz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	color = "#ff0000";
@@ -3465,41 +2957,10 @@
 /turf/open/floor/circuit/green/telecomms/mainframe,
 /area/station/tcommsat/server)
 "mQ" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	req_access = list("engine_equip")
-	},
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/obj/item/stack/cable_coil{
-	color = "#ffff00";
-	icon_state = "coil1";
-	name = "cable piece";
-	pixel_x = 1;
-	amount = 1
-	},
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
-"mR" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	icon_state = "conveyor1"
-	},
-/obj/effect/decal/cleanable/blood/gibs{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/blood/splatter{
-	icon_state = "gibbl2"
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "mS" = (
 /obj/machinery/atmospherics/miner/nitrogen,
 /obj/effect/turf_decal/tile/yellow/full,
@@ -3509,15 +2970,15 @@
 /turf/closed/wall,
 /area/station/medical/storage)
 "mX" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "mY" = (
 /obj/machinery/conveyor{
-	dir = 9;
-	icon_state = "conveyor1"
+	id = "Kitchen_conv";
+	dir = 9
 	},
 /obj/item/bikehorn/rubberducky{
 	dir = 8;
@@ -3527,13 +2988,15 @@
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
 "mZ" = (
-/obj/machinery/atmospherics/components/unary/passive_vent{
-	icon_state = "passive_vent";
-	name = "dark passive vent";
-	pipe_color = "#454545"
-	},
+/obj/machinery/atmospherics/components/unary/passive_vent,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
+"na" = (
+/obj/machinery/conveyor{
+	id = "Shuttle_load"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "nb" = (
 /obj/structure/window/spawner/directional/south,
 /turf/open/floor/plating,
@@ -3541,29 +3004,6 @@
 "nd" = (
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
-"nh" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	icon_state = "conveyor1"
-	},
-/obj/item/dice/d10,
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
-"ni" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "j";
-	name = "letter";
-	pixel_x = -1;
-	pixel_y = -3
-	},
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "a";
-	name = "letter";
-	pixel_x = 13;
-	pixel_y = -4
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "nk" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -3663,13 +3103,17 @@
 /turf/open/floor/iron,
 /area/station/cargo)
 "nz" = (
-/obj/item/conveyor_switch_construct{
-	pixel_x = -4;
-	pixel_y = 6
+/obj/machinery/conveyor_switch/oneway{
+	pixel_x = 5;
+	pixel_y = 16;
+	name = "Sort switch";
+	id = "Sort"
 	},
-/obj/item/conveyor_switch_construct{
-	pixel_x = -2;
-	pixel_y = 1
+/obj/machinery/conveyor_switch{
+	pixel_x = 5;
+	pixel_y = 0;
+	id = "Shuttle_load";
+	name = "Shuttle load switch"
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
@@ -3690,6 +3134,17 @@
 	},
 /turf/open/floor/wood,
 /area/station/service/bar)
+"nD" = (
+/obj/machinery/door/window/brigdoor{
+	dir = 4;
+	req_access = list("xenobiology")
+	},
+/obj/machinery/door/window/brigdoor{
+	dir = 8;
+	req_access = list("xenobiology")
+	},
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "nF" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -3698,13 +3153,7 @@
 /turf/open/floor/plating,
 /area/station/hallway/floor1/aft)
 "nH" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	icon_state = "vent_out";
-	name = "�Xenobiology blue air vent 1AsWf";
-	id_tag = "1AsWf";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "nP" = (
@@ -3748,6 +3197,12 @@
 "ob" = (
 /turf/open/floor/material,
 /area/station/hallway/primary/port)
+"oc" = (
+/obj/structure/loom{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/service/hydroponics)
 "od" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -3757,20 +3212,22 @@
 "oe" = (
 /turf/closed/wall/r_wall,
 /area/station/maintenance/solars/starboard/aft)
+"of" = (
+/obj/machinery/computer/security/mining{
+	dir = 1
+	},
+/obj/structure/window/spawner/directional/south,
+/turf/open/floor/plating,
+/area/station/cargo/miningoffice)
 "og" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/medical/morgue)
 "oi" = (
 /obj/machinery/conveyor{
-	dir = 5;
-	icon_state = "conveyor1"
+	id = "Hallway_conv";
+	dir = 5
 	},
-/obj/effect/decal/cleanable/blood/gibs{
-	dir = 8;
-	icon_state = "gib4"
-	},
-/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/noslip,
 /area/station/hallway/primary/port)
 "oj" = (
@@ -3786,16 +3243,10 @@
 /turf/open/floor/plating,
 /area/station/hallway/primary)
 "ol" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 5;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "5_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
 /obj/machinery/meter/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 5
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "op" = (
@@ -3879,17 +3330,18 @@
 /turf/open/floor/plating,
 /area/station/medical/chemistry)
 "oF" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
 /obj/machinery/light/directional/east,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
+"oH" = (
+/obj/structure/window/spawner/directional/south,
+/obj/machinery/conveyor/inverted{
+	id = "Shuttle_load";
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "oI" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -3898,12 +3350,7 @@
 /area/station/hallway/floor1/aft)
 "oJ" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 9;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
+	dir = 9
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -3931,8 +3378,8 @@
 	pipe_color = "#FF0000"
 	},
 /obj/machinery/conveyor{
-	dir = 8;
-	icon_state = "conveyor1"
+	id = "Hallway_conv";
+	dir = 8
 	},
 /turf/open/floor/noslip,
 /area/station/hallway/primary/port)
@@ -4024,20 +3471,6 @@
 	req_access = list("engine_equip")
 	},
 /obj/machinery/power/terminal,
-/obj/effect/decal/cleanable/blood/gibs{
-	color = "#808080";
-	dir = 4;
-	icon_state = "gib5";
-	name = "rotting gibs"
-	},
-/obj/effect/decal/cleanable/blood/splatter{
-	color = "#808080";
-	icon_state = "gibbl5";
-	name = "dried blood"
-	},
-/obj/effect/decal/cleanable/blood/footprints{
-	icon_state = ""
-	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "pg" = (
@@ -4058,10 +3491,7 @@
 /turf/open/floor/iron,
 /area/station/cargo)
 "pj" = (
-/obj/machinery/camera/autoname/deconstructed{
-	dir = 8;
-	icon_state = "camera"
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "pk" = (
@@ -4093,35 +3523,6 @@
 /obj/effect/spawner/random/engineering/flashlight,
 /turf/open/floor/iron,
 /area/station/cargo)
-"pp" = (
-/obj/machinery/conveyor{
-	dir = 1;
-	icon_state = "conveyor0"
-	},
-/obj/item/food/deadmouse{
-	dir = 8;
-	name = "mouse";
-	pixel_x = 2;
-	pixel_y = -6
-	},
-/obj/item/food/deadmouse{
-	dir = 8;
-	name = "mouse";
-	pixel_x = 1;
-	pixel_y = 16
-	},
-/obj/item/food/deadmouse{
-	name = "mouse";
-	pixel_x = -2;
-	pixel_y = 5
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -1
-	},
-/turf/open/floor/iron/large,
-/area/station/service/kitchen)
 "pq" = (
 /turf/closed/wall,
 /area/station/science/lobby)
@@ -4230,16 +3631,6 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/port/aft)
-"pG" = (
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_4-old"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "pH" = (
 /turf/open/floor/plating,
 /area/station/cargo/bitrunning/den)
@@ -4295,24 +3686,11 @@
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/engineering/gravity_generator)
-"pV" = (
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-1-2-4"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "pW" = (
 /turf/open/floor/light,
 /area/station/science/research)
 "pX" = (
-/obj/machinery/airalarm{
-	name = "Xenobiology Air Alarm";
-	pixel_y = -27;
-	req_access = list("engineering")
-	},
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "pY" = (
@@ -4335,19 +3713,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
-"qb" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	icon_state = "conveyor1"
-	},
-/obj/item/grown/bananapeel{
-	dir = 4
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
-"qc" = (
-/turf/closed/wall/rock/porous,
-/area/station/hallway/primary/port)
 "qe" = (
 /obj/effect/turf_decal/trimline/yellow/filled/corner,
 /turf/open/floor/iron,
@@ -4368,14 +3733,8 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "qj" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 14;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "14_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
+/obj/machinery/atmospherics/pipe/smart/manifold/purple/hidden{
+	dir = 1
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -4424,14 +3783,8 @@
 /turf/open/floor/plating,
 /area/station/hallway/primary)
 "qK" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 1;
-	icon_state = "vent_out";
-	name = "�Science Break Room blue air vent kAvfL";
-	pixel_x = 5;
-	id_tag = "kAvfL";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
 	},
 /turf/open/floor/plating/airless,
 /area/station/science/breakroom)
@@ -4507,6 +3860,8 @@
 "rg" = (
 /obj/structure/window/spawner/directional/west,
 /obj/structure/window/spawner/directional/north,
+/obj/structure/frame/computer,
+/obj/machinery/computer/cargo,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "rh" = (
@@ -4518,17 +3873,11 @@
 /turf/open/floor/iron/herringbone,
 /area/station/engineering/storage_shared)
 "ri" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "engsm"
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
@@ -4555,15 +3904,13 @@
 /obj/effect/mapping_helpers/apc/full_charge,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/engineering/gravity_generator)
+"rm" = (
+/obj/structure/door_assembly/door_assembly_shuttle,
+/turf/open/floor/bronze/flat,
+/area/station/cargo/storage)
 "ro" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 8;
-	icon_state = "vent_out";
-	name = "�Science North Hall blue air vent 68YP4";
-	pixel_y = 5;
-	id_tag = "68YP4";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
 	},
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology/hallway)
@@ -4709,22 +4056,18 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plating,
 /area/station/hallway/floor1/aft)
+"rX" = (
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "rY" = (
 /obj/effect/turf_decal/delivery,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
-	},
-/obj/item/relic/lavaland{
-	icon_state = "necrotech5"
-	},
-/obj/item/relic/lavaland{
-	icon_state = "necrotech2"
-	},
-/obj/item/relic/lavaland{
-	icon_state = "necrotech4"
 	},
 /turf/open/floor/iron,
 /area/station/cargo)
@@ -4759,8 +4102,8 @@
 /area/station/engineering/atmos)
 "si" = (
 /obj/machinery/conveyor{
-	dir = 4;
-	icon_state = "conveyor1"
+	id = "Hallway_conv";
+	dir = 4
 	},
 /turf/open/floor/noslip,
 /area/station/hallway/primary/port)
@@ -4804,21 +4147,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
 /area/station/solars/starboard/aft)
-"su" = (
-/obj/item/stack/sheet/iron{
-	icon_state = "sheet-metal_2";
-	pixel_x = 4;
-	pixel_y = 6;
-	amount = 28
-	},
-/obj/item/stack/sheet/iron{
-	dir = 1;
-	pixel_x = -1;
-	pixel_y = -2;
-	amount = 6
-	},
-/turf/open/floor/plating,
-/area/station/cargo/miningoffice)
 "sv" = (
 /turf/open/floor/iron/large,
 /area/station/service/kitchen/coldroom)
@@ -4844,10 +4172,6 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
 /area/station/hallway/primary)
-"sB" = (
-/obj/structure/table_frame,
-/turf/open/floor/plating,
-/area/station/cargo/storage)
 "sC" = (
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
@@ -4884,33 +4208,10 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
 /area/station/hallway/primary)
-"sJ" = (
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor3"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_4-old"
-	},
-/mob/living/basic/mouse{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "sK" = (
 /obj/machinery/conveyor{
-	dir = 8;
-	icon_state = "conveyor1"
-	},
-/obj/item/food/deadmouse{
-	name = "mouse";
-	pixel_x = -2;
-	pixel_y = 5
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -1
+	id = "Kitchen_conv";
+	dir = 8
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
@@ -4925,22 +4226,22 @@
 "sN" = (
 /obj/structure/cable{
 	color = "#ffff00";
-	icon_state = "l2-1-8"
+	icon_state = "l2-1-4-8"
 	},
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
-	dir = 9;
+	dir = 13;
 	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "9_4";
+	icon_state = "13_4";
 	name = "blue pipe";
 	piping_layer = 4;
 	pipe_color = "#0000FF"
 	},
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#ff0000";
-	dir = 9;
+	dir = 13;
 	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "9_2";
+	icon_state = "13_2";
 	name = "red pipe";
 	piping_layer = 2;
 	pipe_color = "#FF0000"
@@ -5025,24 +4326,8 @@
 /area/station/engineering/supermatter/room)
 "sY" = (
 /obj/machinery/conveyor{
-	dir = 9;
-	icon_state = "conveyor1"
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
-"sZ" = (
-/obj/effect/decal/cleanable/blood/trails{
-	color = "#808080";
-	icon_state = "trails_2";
-	name = "dried tracks"
-	},
-/obj/effect/decal/cleanable/blood{
-	color = "#808080";
-	name = "dried blood"
-	},
-/obj/effect/decal/cleanable/trail_holder,
-/obj/item/staff{
-	pixel_y = -4
+	id = "Hallway_conv";
+	dir = 9
 	},
 /turf/open/floor/noslip,
 /area/station/hallway/primary/port)
@@ -5067,35 +4352,16 @@
 	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
-"td" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "u";
-	name = "letter";
-	pixel_x = -7;
-	pixel_y = 16
-	},
-/turf/closed/wall/mineral/abductor,
-/area/station/hallway/primary/port)
 "tf" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 10;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "10_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
 /obj/machinery/power/energy_accumulator/tesla_coil,
 /obj/structure/cable{
 	color = "#ffff00";
 	icon_state = "l2-2"
 	},
-/obj/effect/overlay/cap_visual{
-	color = "#00ff00";
-	icon_state = "2055_2"
-	},
 /obj/structure/window/plasma/spawner/directional/west,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden{
+	dir = 10
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "ti" = (
@@ -5205,10 +4471,11 @@
 /area/station/cargo)
 "tw" = (
 /obj/structure/table,
-/obj/item/stack/cable_coil/five{
-	color = "#ffff00";
-	pixel_y = -13;
-	amount = 25
+/obj/item/slimecross/reproductive/blue{
+	color = "#add8e6";
+	name = "reproductive blue extract";
+	pixel_x = -8;
+	pixel_y = 7
 	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
@@ -5275,10 +4542,8 @@
 /turf/open/floor/plating/airless,
 /area/station/science/breakroom)
 "tK" = (
-/obj/item/wallframe/extinguisher_cabinet{
-	dir = 4;
-	pixel_x = 2;
-	pixel_y = 4
+/obj/structure/extinguisher_cabinet/directional/east{
+	icon_state = "extinguisher_default_closed"
 	},
 /turf/open/floor/plating,
 /area/station/cargo/miningoffice)
@@ -5312,6 +4577,11 @@
 /obj/structure/tank_dispenser,
 /turf/open/floor/iron/textured,
 /area/station/ai_monitored/command/storage/eva)
+"tW" = (
+/obj/structure/window/spawner/directional/north,
+/obj/item/circuitboard/computer/order_console/mining,
+/turf/open/floor/plating,
+/area/station/cargo/miningoffice)
 "tY" = (
 /obj/machinery/door/airlock,
 /obj/structure/cable{
@@ -5378,14 +4648,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/station/cargo)
-"ul" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	icon_state = "scrub_on";
-	name = "��Port Primary Hallway omni air scrubber HsYxm";
-	id_tag = "HsYxm"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "un" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance,
@@ -5398,15 +4660,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/tcommsat/server)
-"ur" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "d";
-	name = "letter";
-	pixel_x = -5;
-	pixel_y = 16
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "ut" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Port Fore Solar Access"
@@ -5448,10 +4701,7 @@
 /area/station/hallway/primary)
 "uB" = (
 /obj/machinery/power/terminal,
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-1-4-node"
-	},
+/obj/structure/cable,
 /turf/open/floor/material,
 /area/station/engineering/engine_smes)
 "uE" = (
@@ -5493,16 +4743,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/hallway/floor1/aft)
-"uN" = (
-/obj/item/stack/sheet/glass/fifty{
-	dir = 1;
-	icon_state = "sheet-glass_3";
-	pixel_x = 6;
-	pixel_y = -6;
-	amount = 34
-	},
-/turf/open/floor/plating,
-/area/station/cargo/storage)
 "uS" = (
 /obj/machinery/computer/apc_control,
 /turf/open/floor/iron/herringbone,
@@ -5520,6 +4760,10 @@
 /turf/open/floor/iron/grimy,
 /area/station/medical/surgery)
 "uX" = (
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-1-2"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	color = "#ff0000";
 	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
@@ -5532,28 +4776,6 @@
 	icon_state = "3_4";
 	name = "blue air supply pipe"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/obj/item/food/deadmouse{
-	color = "#3a3a3a";
-	name = "mouse"
-	},
-/obj/item/stack/cable_coil{
-	color = "#ffff00";
-	icon_state = "coil1";
-	name = "cable piece";
-	pixel_x = -2;
-	pixel_y = -2;
-	amount = 1
-	},
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
 "uZ" = (
@@ -5562,15 +4784,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary)
-"va" = (
-/obj/machinery/light/directional/north,
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "vb" = (
 /obj/item/stack/rods/fifty{
 	dir = 4;
@@ -5584,32 +4797,10 @@
 /obj/machinery/computer/rdconsole,
 /turf/open/floor/iron,
 /area/station/hallway/primary)
-"vd" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/food/deadmouse{
-	color = "#3a3a3a";
-	name = "mouse"
-	},
-/obj/item/stack/cable_coil{
-	color = "#ffff00";
-	icon_state = "coil1";
-	name = "cable piece";
-	pixel_x = 2;
-	pixel_y = -1;
-	amount = 1
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor4"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_3-old"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "ve" = (
 /obj/machinery/door/window{
 	dir = 8;
-	req_access = list()
+	req_access = list("genetics")
 	},
 /turf/open/floor/iron/sepia,
 /area/station/science/genetics)
@@ -5650,17 +4841,6 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/station/medical/morgue)
-"vy" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	color = "#0000ff";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_4";
-	name = "blue air supply pipe"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "vA" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -5738,9 +4918,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
-"vO" = (
-/turf/open/floor/grass,
-/area/station/hallway/primary/port)
 "vR" = (
 /obj/machinery/conveyor/inverted{
 	dir = 6;
@@ -5786,20 +4963,6 @@
 "wc" = (
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
-"we" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	color = "#ff0000";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "red scrubbers pipe"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "wf" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /turf/open/floor/iron,
@@ -5828,22 +4991,12 @@
 /area/station/service/hydroponics)
 "wl" = (
 /obj/machinery/door/airlock/maintenance,
-/turf/open/floor/mineral/abductor,
+/turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "wm" = (
 /obj/structure/cable,
 /turf/open/floor/material,
 /area/station/engineering/engine_smes)
-"wn" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1;
-	icon_state = "vent_out";
-	name = "��Engineering Foyer omni air vent 7KZvE";
-	pixel_x = 5;
-	id_tag = "7KZvE"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "wo" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white/small,
@@ -5858,6 +5011,11 @@
 /obj/machinery/door/window{
 	dir = 1;
 	req_access = list()
+	},
+/obj/machinery/mineral/ore_redemption,
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "i";
+	name = "letter"
 	},
 /turf/open/floor/plating,
 /area/station/cargo/miningoffice)
@@ -5923,7 +5081,6 @@
 	icon_state = "12_2";
 	name = "red scrubbers pipe"
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
 "wA" = (
@@ -5937,6 +5094,37 @@
 	},
 /turf/open/floor/light,
 /area/station/science/research)
+"wE" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-2-8"
+	},
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#0000ff";
+	dir = 10;
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "10_4";
+	name = "blue pipe";
+	piping_layer = 4;
+	pipe_color = "#0000FF"
+	},
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#ff0000";
+	dir = 10;
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "10_2";
+	name = "red pipe";
+	piping_layer = 2;
+	pipe_color = "#FF0000"
+	},
+/turf/open/floor/plating,
+/area/station/hallway/primary/starboard)
 "wI" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -5956,13 +5144,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary)
-"wP" = (
-/obj/machinery/conveyor{
-	dir = 5;
-	icon_state = "conveyor1"
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "wQ" = (
 /obj/structure/cable,
 /turf/open/floor/iron/textured,
@@ -6000,38 +5181,14 @@
 /obj/structure/window/spawner/directional/west,
 /turf/open/floor/iron,
 /area/station/cargo)
-"wW" = (
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
-"wZ" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "n";
-	name = "letter";
-	pixel_x = 6;
-	pixel_y = 1
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "xb" = (
-/obj/machinery/processor,
+/obj/machinery/processor/slime,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "xc" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor6"
-	},
-/obj/item/stack/cable_coil{
+/obj/structure/cable{
 	color = "#ffff00";
-	icon_state = "coil1";
-	name = "cable piece";
-	pixel_y = -2;
-	amount = 1
+	icon_state = "l2-1-2"
 	},
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
@@ -6046,11 +5203,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
-"xk" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "xl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
@@ -6073,6 +5225,10 @@
 "xo" = (
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
+"xp" = (
+/obj/item/circuitboard/machine/brm,
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "xs" = (
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/blood/drip{
@@ -6082,22 +5238,16 @@
 /turf/open/floor/iron/white/textured_large,
 /area/station/medical/surgery)
 "xt" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "xv" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 5;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "5_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
 /obj/machinery/meter/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden{
+	dir = 5
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "xy" = (
@@ -6145,10 +5295,7 @@
 	pipe_color = "#00FF00"
 	},
 /obj/machinery/meter,
-/obj/machinery/camera/autoname/deconstructed{
-	dir = 4;
-	icon_state = "camera"
-	},
+/obj/machinery/camera/directional/east,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "xJ" = (
@@ -6196,21 +5343,6 @@
 "xY" = (
 /turf/open/floor/plating,
 /area/station/maintenance/solars/starboard/aft)
-"ya" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_2"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
-"yb" = (
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "yd" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -6285,19 +5417,15 @@
 /obj/structure/cable/multilayer/connected,
 /turf/open/floor/iron/herringbone,
 /area/station/engineering/storage_shared)
+"yA" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "yC" = (
 /turf/open/floor/iron/dark/textured,
 /area/station/science/robotics/lab)
-"yD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor6"
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "yE" = (
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
@@ -6381,24 +5509,33 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo)
+"yH" = (
+/obj/item/circuitboard/machine/circuit_imprinter,
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "yI" = (
-/obj/item/circuitboard/machine/ore_silo{
-	dir = 4;
-	icon = '';
-	name = "Ore Silo (Machine Board)";
-	pixel_x = 5;
-	pixel_y = 1
-	},
-/obj/item/circuitboard/machine/stacking_unit_console{
-	dir = 1;
-	icon = '';
-	name = "Stacking Machine Console (Machine Board)";
-	pixel_x = -2;
-	pixel_y = 5
-	},
 /obj/structure/cable{
 	color = "#ffff00";
 	icon_state = "l2-1-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#ff0000";
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "3_2";
+	name = "red pipe";
+	piping_layer = 2;
+	pipe_color = "#FF0000"
+	},
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#0000ff";
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "3_4";
+	name = "blue pipe";
+	piping_layer = 4;
+	pipe_color = "#0000FF"
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
@@ -6491,34 +5628,19 @@
 "yT" = (
 /turf/open/floor/iron,
 /area/station/command/bridge)
-"yU" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "o";
-	name = "letter";
-	pixel_x = -12;
-	pixel_y = 1
+"yV" = (
+/obj/structure/table,
+/obj/item/reagent_containers/cup/beaker{
+	pixel_x = -10;
+	pixel_y = 10
 	},
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "b";
-	name = "letter";
-	pixel_x = 12;
-	pixel_y = -13
+/obj/item/reagent_containers/cup/beaker/large,
+/obj/item/reagent_containers/syringe{
+	pixel_x = -3;
+	pixel_y = 7
 	},
 /turf/open/floor/iron,
-/area/station/hallway/primary/port)
-"yW" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor6"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_1-old"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
+/area/station/science/xenobiology)
 "yY" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -6529,9 +5651,6 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 8
-	},
-/obj/item/gun/magic/staff/healing{
-	pixel_y = 2
 	},
 /turf/open/floor/iron/sepia,
 /area/station/science/genetics)
@@ -6559,6 +5678,15 @@
 "ze" = (
 /turf/open/space/basic,
 /area/space)
+"zf" = (
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "zg" = (
 /obj/machinery/door/airlock/maintenance/glass,
 /obj/effect/mapping_helpers/airlock/welded,
@@ -6570,15 +5698,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
-"zo" = (
-/obj/effect/decal/cleanable/oil{
-	icon_state = "floor2"
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "zu" = (
 /obj/machinery/door/airlock/atmos/glass{
 	name = "Atmospherics"
@@ -6589,13 +5708,11 @@
 /area/station/engineering/atmos)
 "zv" = (
 /obj/structure/window/spawner/directional/south,
-/obj/item/stack/sheet/iron{
-	dir = 4;
-	pixel_y = -5;
-	amount = 6
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 1
+	},
+/obj/structure/frame/computer{
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
@@ -6727,22 +5844,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
-"zV" = (
-/obj/machinery/light/directional/north,
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
-/obj/effect/decal/cleanable/blood/gibs{
-	dir = 1;
-	icon_state = "gib2"
-	},
-/obj/effect/decal/cleanable/blood/gibs/core{
-	icon_state = "gibmid2"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "zW" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/meter,
@@ -6774,46 +5875,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
-"Ah" = (
-/obj/item/circuitboard/machine/brm{
-	dir = 4;
-	icon = '';
-	name = "Boulder Retrieval Matrix (Machine Board)";
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/obj/item/circuitboard/machine/ore_redemption{
-	dir = 4;
-	icon = '';
-	name = "Ore Redemption (Machine Board)";
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/turf/open/floor/plating,
-/area/station/cargo/storage)
-"Ak" = (
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-1-2"
-	},
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_4";
-	name = "blue pipe";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
-	},
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff0000";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "red pipe";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
-	},
-/turf/open/floor/plating,
-/area/station/hallway/primary/starboard)
 "Al" = (
 /obj/structure/cable,
 /obj/machinery/modular_computer/preset/cargochat/cargo{
@@ -6826,9 +5887,6 @@
 /area/station/medical/surgery)
 "As" = (
 /obj/structure/window/spawner/directional/west,
-/obj/structure/closet/crate/critter{
-	dir = 8
-	},
 /mob/living/basic/pet/cat/runtime,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
@@ -6848,19 +5906,6 @@
 	},
 /turf/open/floor/material,
 /area/station/engineering/engine_smes)
-"AE" = (
-/turf/open/floor/fakebasalt,
-/area/station/hallway/primary/port)
-"AF" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor6"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "AG" = (
 /obj/structure/table,
 /obj/machinery/processor{
@@ -6917,7 +5962,7 @@
 /obj/machinery/door/airlock,
 /obj/structure/cable{
 	color = "#ffff00";
-	icon_state = "l2-2"
+	icon_state = "l2-1-2"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	color = "#0000ff";
@@ -6925,33 +5970,18 @@
 	icon_state = "3_4";
 	name = "blue air supply pipe"
 	},
+/obj/effect/decal/cleanable/robot_debris/old{
+	icon_state = "gib3"
+	},
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	color = "#ff0000";
 	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
 	icon_state = "3_2";
 	name = "red scrubbers pipe"
 	},
-/obj/effect/decal/cleanable/robot_debris/old{
-	icon_state = "gib3"
-	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/station/engineering/break_room)
-"AS" = (
-/obj/item/stack/sheet/iron{
-	icon_state = "sheet-metal_2";
-	pixel_x = -5;
-	pixel_y = -2;
-	amount = 21
-	},
-/obj/item/stack/rods{
-	dir = 4;
-	pixel_x = 4;
-	pixel_y = -6;
-	amount = 12
-	},
-/turf/open/floor/iron,
-/area/station/science/xenobiology)
 "AV" = (
 /obj/machinery/door/airlock/mining/glass{
 	name = "Mining Dock"
@@ -6977,14 +6007,8 @@
 /turf/open/floor/iron,
 /area/station/cargo)
 "AX" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	dir = 1;
-	icon_state = "scrub_on";
-	name = "�Xenobiology red air scrubber 0cLpK";
-	pixel_x = -5;
-	id_tag = "0cLpK";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
 	},
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology)
@@ -7064,6 +6088,10 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/station/cargo)
+"Bv" = (
+/obj/item/storage/bag/xeno,
+/turf/open/floor/iron,
+/area/station/science/xenobiology)
 "Bw" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
@@ -7103,9 +6131,6 @@
 	color = "#ffff00";
 	icon_state = "l2-1-4-8"
 	},
-/obj/effect/decal/cleanable/blood/footprints{
-	icon_state = ""
-	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "BH" = (
@@ -7116,23 +6141,11 @@
 /obj/structure/girder,
 /turf/open/floor/plating,
 /area/station/engineering/engine_smes)
-"BM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_3-old"
-	},
+"BP" = (
+/obj/machinery/door/airlock/vault,
+/obj/effect/mapping_helpers/airlock/access/all/supply/vault,
 /turf/open/floor/plating,
-/area/station/engineering/break_room)
-"BQ" = (
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_1-old"
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
+/area/station/hallway/primary/starboard)
 "BR" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -7217,18 +6230,7 @@
 /turf/open/floor/plating,
 /area/station/hallway/primary/port)
 "Cb" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff7b00";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "orange pipe";
-	piping_layer = 2;
-	pipe_color = "#FF7B00"
-	},
-/obj/effect/overlay/cap_visual{
-	color = "#ff7b00";
-	icon_state = "780_2"
-	},
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
 /turf/closed/wall,
 /area/station/engineering/supermatter/room)
 "Cg" = (
@@ -7237,6 +6239,13 @@
 /obj/item/newspaper,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
+"Ci" = (
+/turf/closed/wall/r_wall,
+/area/station/hallway/primary/starboard)
+"Ck" = (
+/obj/item/circuitboard/machine/netpod,
+/turf/open/floor/plating,
+/area/station/cargo/bitrunning/den)
 "Cl" = (
 /obj/machinery/ore_silo,
 /turf/open/floor/iron/textured,
@@ -7245,20 +6254,9 @@
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology)
 "Co" = (
-/obj/machinery/airalarm{
-	dir = 8;
-	name = "Science North Hall Air Alarm";
-	pixel_x = -27;
-	req_access = list("engineering")
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	dir = 4;
-	icon_state = "scrub_on";
-	name = "�Science North Hall red air scrubber HPH4N";
-	pixel_y = -5;
-	id_tag = "HPH4N";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
 	},
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology/hallway)
@@ -7287,14 +6285,8 @@
 /turf/open/floor/iron/white/textured_large,
 /area/station/medical/surgery)
 "Cw" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
@@ -7306,17 +6298,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
 "CA" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	icon_state = "scrub_on";
-	name = "��Engineering Foyer omni air scrubber EGyJC";
-	pixel_x = -5;
-	id_tag = "EGyJC"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
 "CB" = (
@@ -7362,29 +6344,11 @@
 	icon_state = "5_2";
 	name = "red scrubbers pipe"
 	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
-"CH" = (
-/obj/machinery/door/firedoor{
-	name = "�Starboard Primary Hallway firelock 0w99u";
-	id_tag = "0w99u"
-	},
-/turf/open/floor/plating,
-/area/station/hallway/primary/starboard)
 "CJ" = (
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology/hallway)
-"CK" = (
-/obj/item/antag_spawner/slaughter_demon/laughter{
-	color = "#ff69b4";
-	dir = 4;
-	pixel_y = 3
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "CL" = (
 /turf/closed/wall,
 /area/station/hallway/floor1/fore)
@@ -7423,26 +6387,23 @@
 	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
-"CS" = (
-/obj/effect/decal/cleanable/ants,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor5"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_1-old"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "CT" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/obj/machinery/camera/autoname/deconstructed{
-	dir = 8;
-	icon_state = "camera"
-	},
+/obj/machinery/camera/directional/west,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
+"CU" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "Trash"
+	},
+/obj/machinery/recycler{
+	dir = 8;
+	icon_state = "grinder-o1"
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "CV" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -7469,12 +6430,22 @@
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
+"CX" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "Trash"
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "CY" = (
 /obj/machinery/airalarm{
 	dir = 8;
 	name = "Cargonia Air Alarm";
 	pixel_x = -27;
 	req_access = list("engineering")
+	},
+/obj/structure/frame/computer{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
@@ -7523,14 +6494,8 @@
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "Dk" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff7b00";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "orange pipe";
-	piping_layer = 2;
-	pipe_color = "#FF7B00"
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -7546,39 +6511,10 @@
 /obj/machinery/door/airlock/maintenance,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
-"Du" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	color = "#ff0000";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "red scrubbers pipe"
-	},
-/obj/effect/decal/cleanable/oil,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
-	},
-/obj/effect/decal/cleanable/oil/slippery,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_2"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "Dv" = (
 /obj/machinery/ntnet_relay,
 /turf/open/floor/circuit/green/telecomms/mainframe,
 /area/station/tcommsat/server)
-"Dw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_2"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_3-old"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "Dx" = (
 /obj/structure/cable,
 /obj/machinery/power/terminal{
@@ -7596,6 +6532,12 @@
 "Dz" = (
 /turf/open/floor/wood,
 /area/station/service/bar)
+"DA" = (
+/mob/living/basic/slime{
+	name = "grey baby slime (632)"
+	},
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "DB" = (
 /obj/machinery/power/port_gen/pacman,
 /obj/item/stack/sheet/mineral/plasma/thirty,
@@ -7611,11 +6553,16 @@
 "DE" = (
 /turf/open/floor/iron/white/small,
 /area/station/science/lobby)
-"DN" = (
-/obj/machinery/door/firedoor{
-	name = "�Starboard Primary Hallway firelock 8PLfT";
-	id_tag = "8PLfT"
+"DL" = (
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "d";
+	name = "letter"
 	},
+/turf/closed/wall,
+/area/station/cargo/miningoffice)
+"DN" = (
+/obj/machinery/door/firedoor,
+/obj/structure/table_frame,
 /turf/open/floor/plating,
 /area/station/hallway/primary/starboard)
 "DO" = (
@@ -7648,28 +6595,16 @@
 	dir = 4
 	},
 /obj/machinery/conveyor{
-	dir = 1;
-	icon_state = "conveyor0"
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -5;
-	pixel_y = 12
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -1
-	},
-/obj/item/food/deadmouse{
-	name = "mouse";
-	pixel_x = -2;
-	pixel_y = 5
+	id = "Kitchen_conv";
+	dir = 1
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
 "DV" = (
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-1-2"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	color = "#ff0000";
 	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
@@ -7682,20 +6617,6 @@
 	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
 	icon_state = "6_4";
 	name = "blue air supply pipe"
-	},
-/obj/item/stack/cable_coil{
-	color = "#ffff00";
-	icon_state = "coil1";
-	name = "cable piece";
-	pixel_y = 2;
-	amount = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_1-old"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor6"
 	},
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
@@ -7714,6 +6635,13 @@
 	},
 /turf/open/floor/circuit,
 /area/station/science/xenobiology)
+"Ec" = (
+/obj/machinery/conveyor_switch/oneway{
+	name = "Trash switch";
+	id = "Trash"
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "Ee" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart{
@@ -7771,16 +6699,7 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "Er" = (
-/obj/machinery/airalarm/directional/west{
-	req_access = list("engineering")
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
-	},
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
 "Eu" = (
@@ -7800,8 +6719,8 @@
 	pipe_color = "#FF0000"
 	},
 /obj/machinery/conveyor{
-	dir = 4;
-	icon_state = "conveyor1"
+	id = "Hallway_conv";
+	dir = 4
 	},
 /turf/open/floor/noslip,
 /area/station/hallway/primary/port)
@@ -7835,22 +6754,6 @@
 "EF" = (
 /obj/machinery/door/window{
 	req_access = list()
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
-"EG" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	icon_state = "vent_out";
-	name = "��Port Primary Hallway omni air vent 8wN0B";
-	id_tag = "8wN0B"
-	},
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff0000";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "red pipe";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
@@ -7919,21 +6822,6 @@
 "EM" = (
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/port/fore)
-"EN" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "n";
-	name = "letter";
-	pixel_x = -8;
-	pixel_y = -4
-	},
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "i";
-	name = "letter";
-	pixel_x = 6;
-	pixel_y = -4
-	},
-/turf/open/floor/plating,
-/area/station/hallway/primary/port)
 "EO" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7994,6 +6882,13 @@
 	},
 /turf/open/floor/iron/textured,
 /area/station/ai_monitored/command/storage/eva)
+"EU" = (
+/obj/machinery/conveyor{
+	dir = 6;
+	id = "Trash"
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "EX" = (
 /obj/machinery/pipedispenser/disposal,
 /turf/open/floor/iron/dark,
@@ -8025,6 +6920,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/server)
+"Ff" = (
+/obj/item/circuitboard/computer/order_console/bitrunning,
+/turf/open/floor/plating,
+/area/station/cargo/bitrunning/den)
 "Fg" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -8060,6 +6959,13 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/catwalk_floor,
 /area/station/hallway/floor1/fore)
+"Fo" = (
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "d";
+	name = "letter"
+	},
+/turf/closed/wall,
+/area/station/cargo/bitrunning/den)
 "Fq" = (
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#00ff00";
@@ -8092,6 +6998,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary)
+"Fv" = (
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "d";
+	name = "letter"
+	},
+/turf/closed/wall,
+/area/station/maintenance/disposal)
 "Fw" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -8189,12 +7102,7 @@
 /area/station/hallway/floor1/fore)
 "FX" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 5;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
+	dir = 5
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -8238,26 +7146,6 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plating,
 /area/station/hallway/floor1/fore)
-"Gl" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "t";
-	name = "letter";
-	pixel_x = -13;
-	pixel_y = -6
-	},
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "o";
-	name = "letter";
-	pixel_y = -6
-	},
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "r";
-	name = "letter";
-	pixel_x = 13;
-	pixel_y = -6
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "Gn" = (
 /obj/machinery/blackbox_recorder,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -8356,12 +7244,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/blood{
-	color = "#808080";
-	icon_state = "floor2";
-	name = "dried blood"
-	},
-/obj/effect/decal/cleanable/trail_holder,
 /turf/open/floor/plating,
 /area/station/hallway/primary/port)
 "GV" = (
@@ -8409,6 +7291,7 @@
 	name = "Mining dock internal";
 	req_access = list()
 	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plating,
 /area/station/cargo/miningoffice)
 "Hl" = (
@@ -8518,24 +7401,11 @@
 /obj/structure/disposalpipe/junction,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
-"HD" = (
-/obj/effect/decal/cleanable/blood/splatter{
-	color = "#808080";
-	name = "dried blood"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "HH" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 9;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "9_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
 /obj/machinery/meter/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden{
+	dir = 9
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "HI" = (
@@ -8639,10 +7509,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/port/fore)
-"Ih" = (
-/obj/structure/closet,
-/turf/open/floor/plating,
-/area/station/cargo/storage)
 "Ii" = (
 /obj/machinery/airalarm/directional/west{
 	name = "�Genetics Lab Air Alarm";
@@ -8666,6 +7532,13 @@
 	},
 /turf/open/floor/iron/dark/telecomms,
 /area/station/tcommsat/server)
+"In" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space/nearstation)
 "Ip" = (
 /obj/structure/closet/wardrobe/miner,
 /turf/open/floor/iron,
@@ -8687,18 +7560,8 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "Iy" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
-/obj/effect/overlay/cap_visual{
-	color = "#0000ff";
-	icon_state = "2055_2"
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
@@ -8709,14 +7572,10 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/bitrunning/den)
-"IB" = (
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
-/turf/open/floor/light,
-/area/station/hallway/primary/port)
+"ID" = (
+/obj/effect/spawner/random/medical/two_percent_xeno_egg_spawner,
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "IF" = (
 /obj/machinery/light/directional/north,
 /obj/structure/displaycase/noalert{
@@ -8751,20 +7610,6 @@
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /turf/open/floor/plating,
 /area/station/cargo)
-"IN" = (
-/obj/effect/decal/cleanable/blood/gibs{
-	color = "#808080";
-	dir = 4;
-	icon_state = "gib3";
-	name = "rotting gibs"
-	},
-/obj/effect/decal/cleanable/blood/splatter{
-	color = "#808080";
-	icon_state = "gibbl4";
-	name = "dried blood"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "IO" = (
 /obj/structure/frame/machine,
 /turf/open/floor/iron,
@@ -8827,12 +7672,7 @@
 /turf/open/floor/plating,
 /area/station/hallway/primary)
 "IY" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	icon_state = "pump_on-2";
-	name = "omni gas pump";
-	pixel_x = -5;
-	piping_layer = 2
-	},
+/obj/machinery/atmospherics/components/binary/pump/on,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "IZ" = (
@@ -8871,6 +7711,7 @@
 	name = "green passive vent";
 	pipe_color = "#00FF00"
 	},
+/obj/machinery/atmospherics/components/unary/passive_vent,
 /turf/open/floor/circuit,
 /area/station/science/xenobiology)
 "Ji" = (
@@ -8939,25 +7780,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "JA" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	icon_state = "conveyor1"
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -1
-	},
-/obj/item/food/deadmouse{
-	dir = 8;
-	name = "mouse";
-	pixel_x = 2;
-	pixel_y = -6
-	},
-/obj/item/food/deadmouse{
-	name = "mouse";
-	pixel_x = -2;
-	pixel_y = 5
+/obj/machinery/conveyor/inverted{
+	dir = 6;
+	id = "Kitchen_conv"
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
@@ -8992,8 +7817,8 @@
 /area/station/medical/storage)
 "JN" = (
 /obj/machinery/conveyor{
-	dir = 6;
-	icon_state = "conveyor1"
+	id = "Hallway_conv";
+	dir = 6
 	},
 /turf/open/floor/noslip,
 /area/station/hallway/primary/port)
@@ -9007,15 +7832,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/starboard)
-"JU" = (
-/turf/open/floor/material,
-/area/station/engineering/engine_smes)
-"JX" = (
-/turf/closed/wall,
-/area/station/engineering/storage_shared)
-"JY" = (
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-4-8"
+	},
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
 	dir = 4;
@@ -9034,18 +7854,14 @@
 	piping_layer = 2;
 	pipe_color = "#FF0000"
 	},
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-4-8"
-	},
-/obj/machinery/light/directional/south,
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
 /turf/open/floor/iron,
-/area/station/hallway/primary/port)
+/area/station/hallway/primary/starboard)
+"JU" = (
+/turf/open/floor/material,
+/area/station/engineering/engine_smes)
+"JX" = (
+/turf/closed/wall,
+/area/station/engineering/storage_shared)
 "JZ" = (
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/rnd/production/circuit_imprinter,
@@ -9114,6 +7930,9 @@
 	name = "Mining dock external";
 	req_access = list()
 	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/station/cargo/miningoffice)
 "Kk" = (
@@ -9152,6 +7971,13 @@
 /area/station/maintenance/solars/starboard/aft)
 "Kv" = (
 /turf/closed/wall,
+/area/station/command/bridge)
+"Kx" = (
+/obj/machinery/conveyor_switch{
+	id = "Hallway_conv";
+	name = "Hallway switch"
+	},
+/turf/open/floor/iron,
 /area/station/command/bridge)
 "KA" = (
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -9259,7 +8085,14 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
-"KR" = (
+"KT" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable{
+	color = "#ffff00";
+	icon_state = "l2-4-8"
+	},
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
 	dir = 4;
@@ -9277,21 +8110,6 @@
 	name = "red pipe";
 	piping_layer = 2;
 	pipe_color = "#FF0000"
-	},
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-4-8"
-	},
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
-"KT" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/plating,
 /area/station/hallway/primary/starboard)
@@ -9340,13 +8158,8 @@
 /turf/open/floor/plating,
 /area/station/cargo)
 "Lg" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	dir = 8;
-	icon_state = "vent_out";
-	name = "�Xenobiology blue air vent 06Ajj";
-	id_tag = "06Ajj";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
 	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
@@ -9401,6 +8214,10 @@
 	},
 /turf/open/floor/plating,
 /area/station/hallway/primary)
+"Ls" = (
+/obj/item/holosign_creator/atmos,
+/turf/open/floor/plating,
+/area/station/hallway/primary/port)
 "Lt" = (
 /obj/item/stack/sheet/plastic{
 	dir = 4;
@@ -9514,14 +8331,6 @@
 /obj/structure/cable/layer1,
 /turf/open/floor/catwalk_floor,
 /area/station/hallway/primary)
-"LE" = (
-/obj/item/stack/sheet/iron{
-	pixel_x = 2;
-	pixel_y = 5;
-	amount = 3
-	},
-/turf/open/floor/engine,
-/area/station/science/xenobiology)
 "LH" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 4
@@ -9540,11 +8349,11 @@
 "LK" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 8;
-	req_access = list()
+	req_access = list("xenobiology")
 	},
 /obj/machinery/door/window/brigdoor{
 	dir = 4;
-	req_access = list()
+	req_access = list("xenobiology")
 	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
@@ -9635,14 +8444,6 @@
 "Mb" = (
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
-"Mc" = (
-/obj/effect/decal/cleanable/vomit,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "Md" = (
 /obj/effect/turf_decal/box/red/corners{
 	dir = 4
@@ -9659,18 +8460,15 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/starboard/fore)
 "Mi" = (
-/obj/item/circuitboard/machine/stacking_machine,
+/obj/machinery/mineral/stacking_machine{
+	input_dir = 2
+	},
+/obj/machinery/mineral/stacking_unit_console{
+	pixel_x = 28;
+	pixel_y = 0
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
-"Mj" = (
-/obj/item/relic/lavaland{
-	dir = 8;
-	icon_state = "necrotech1";
-	name = "ruined shard";
-	pixel_y = 5
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "Ml" = (
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
@@ -9857,16 +8655,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
-"Nh" = (
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor4"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
+"Ne" = (
+/obj/machinery/conveyor{
+	id = "Sort"
 	},
 /turf/open/floor/plating,
-/area/station/engineering/break_room)
+/area/station/cargo/storage)
 "Ni" = (
 /obj/machinery/door/airlock/mining{
 	name = "Mining Office"
@@ -9885,26 +8679,6 @@
 	},
 /turf/open/floor/material,
 /area/station/engineering/engine_smes)
-"Nk" = (
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-2"
-	},
-/turf/open/floor/material,
-/area/station/engineering/engine_smes)
-"Nl" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	icon_state = "conveyor1"
-	},
-/obj/item/stack/sheet/iron{
-	dir = 4;
-	pixel_x = -4;
-	pixel_y = 5;
-	amount = 11
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "Nn" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -9932,21 +8706,8 @@
 	color = "#ffff00";
 	icon_state = "l2-4-8"
 	},
-/obj/effect/decal/cleanable/blood/trails{
-	color = "#808080";
-	name = "dried tracks"
-	},
-/obj/effect/decal/cleanable/blood{
-	color = "#808080";
-	icon_state = "floor7";
-	name = "dried blood"
-	},
-/obj/effect/decal/cleanable/trail_holder,
 /obj/structure/disposalpipe/segment{
 	dir = 6
-	},
-/obj/effect/decal/cleanable/blood/footprints{
-	icon_state = ""
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
@@ -9965,34 +8726,6 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
-"Nr" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_4";
-	name = "blue pipe";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
-	},
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff0000";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "red pipe";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
-	},
-/obj/structure/cable{
-	color = "#ffff00";
-	icon_state = "l2-4-8"
-	},
-/obj/effect/decal/cleanable/blood/footprints{
-	icon_state = ""
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "Ns" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	color = "#0000ff";
@@ -10001,23 +8734,12 @@
 	icon_state = "14_4";
 	name = "blue air supply pipe"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor7"
-	},
-/obj/effect/decal/cleanable/vomit,
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
 "Nt" = (
 /obj/structure/closet/crate/freezer/food,
 /turf/open/floor/iron/large,
 /area/station/service/kitchen/coldroom)
-"Nv" = (
-/obj/structure/flora/bush/leavy/style_random{
-	icon_state = "leafybush_2"
-	},
-/turf/open/floor/grass,
-/area/station/hallway/primary/port)
 "Nw" = (
 /obj/structure/cable,
 /turf/open/floor/iron,
@@ -10052,9 +8774,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary)
-"NB" = (
-/turf/open/floor/fakepit,
-/area/station/hallway/primary/port)
 "NC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/directional/west,
@@ -10062,6 +8781,11 @@
 /area/station/hallway/secondary/entry)
 "ND" = (
 /obj/structure/table,
+/obj/item/slimecross/reproductive/grey{
+	name = "reproductive grey extract";
+	pixel_x = -9;
+	pixel_y = 10
+	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "NE" = (
@@ -10097,6 +8821,56 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/ai_monitored/command/storage/eva)
+"NS" = (
+/obj/item/mod/construction/gauntlets{
+	dir = 1;
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/mod/construction/shell{
+	dir = 1;
+	pixel_x = -5;
+	pixel_y = -4
+	},
+/obj/item/mod/construction/helmet{
+	dir = 1;
+	pixel_x = -1;
+	pixel_y = -5
+	},
+/obj/item/mod/construction/chestplate{
+	dir = 1;
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/obj/item/mod/construction/plating/atmospheric{
+	dir = 1;
+	icon_state = "atmospheric-plating";
+	name = "MOD atmospheric external plating";
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/mod/construction/boots{
+	dir = 1;
+	pixel_x = 4;
+	pixel_y = -6
+	},
+/obj/item/mod/module/dispenser/mirage{
+	dir = 1;
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/obj/item/mod/module/reagent_scanner{
+	dir = 1;
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/item/mod/module/tether{
+	dir = 1;
+	pixel_x = 3;
+	pixel_y = -1
+	},
+/turf/open/floor/iron/textured_half,
+/area/station/science/robotics/lab)
 "NT" = (
 /obj/structure/safe/vault,
 /obj/item/storage/briefcase/secure/riches,
@@ -10143,10 +8917,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary)
-"Od" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "Of" = (
 /obj/effect/turf_decal/box/red/corners,
 /turf/open/floor/iron/dark/diagonal,
@@ -10172,13 +8942,8 @@
 /area/station/service/kitchen)
 "Om" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1;
-	icon_state = "vent_out";
-	name = "��Engineering Foyer omni air vent iaI3W";
-	pixel_x = 5;
-	id_tag = "iaI3W"
+	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
 "Oo" = (
@@ -10208,7 +8973,7 @@
 /area/station/engineering/storage_shared)
 "Ow" = (
 /obj/machinery/door/poddoor/shutters/preopen/deconstructed,
-/obj/machinery/smartfridge/chemistry,
+/obj/machinery/smartfridge/chemistry/preloaded,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
@@ -10316,22 +9081,14 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "OI" = (
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 1;
-	icon_state = "connector";
-	name = "omni connector port";
-	pixel_x = -5;
-	piping_layer = 2
-	},
 /obj/machinery/portable_atmospherics/canister/nitrogen,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "OJ" = (
-/obj/machinery/door/airlock/research{
-	icon_state = "";
-	name = "Airlock";
-	req_access = list()
-	},
+/obj/machinery/door/airlock/research,
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology/hallway)
 "OK" = (
@@ -10344,6 +9101,13 @@
 /obj/structure/sign/warning/vacuum/external/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
+"OQ" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "Trash"
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "OW" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -10418,6 +9182,16 @@
 	pixel_x = -9;
 	pixel_y = -1
 	},
+/obj/item/food/grown/banana{
+	dir = 1;
+	pixel_x = -9;
+	pixel_y = -1
+	},
+/obj/item/food/grown/banana{
+	dir = 1;
+	pixel_x = -9;
+	pixel_y = -1
+	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen/coldroom)
 "Pc" = (
@@ -10429,11 +9203,7 @@
 /area/station/cargo)
 "Pf" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	icon_state = "pump_on-2";
-	name = "omni gas pump";
-	pixel_x = -5;
-	piping_layer = 2
+	dir = 1
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -10554,7 +9324,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "Pz" = (
-/obj/machinery/smartfridge,
+/obj/machinery/smartfridge/food,
 /turf/open/floor/iron/large,
 /area/station/service/hydroponics)
 "PA" = (
@@ -10586,29 +9356,24 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/port/fore)
 "PJ" = (
-/obj/item/circuitboard/machine/ore_redemption{
-	icon = '';
-	name = "Ore Redemption (Machine Board)";
-	pixel_x = 6;
-	pixel_y = -3
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
-/obj/item/circuitboard/computer/order_console/mining{
-	dir = 4;
-	icon = '';
-	name = "Mining Vending Console (Computer Board)";
-	pixel_x = 5;
-	pixel_y = 4
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#ff0000";
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "3_2";
+	name = "red pipe";
+	piping_layer = 2;
+	pipe_color = "#FF0000"
 	},
-/obj/item/circuitboard/machine/circuit_imprinter{
-	icon = '';
-	name = "Circuit Imprinter (Machine Board)";
-	pixel_x = 5
-	},
-/obj/item/circuitboard/machine/netpod{
-	icon = '';
-	name = "Netpod (Machine Board)";
-	pixel_x = -3;
-	pixel_y = 5
+/obj/machinery/atmospherics/pipe/smart{
+	color = "#0000ff";
+	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
+	icon_state = "3_4";
+	name = "blue pipe";
+	piping_layer = 4;
+	pipe_color = "#0000FF"
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
@@ -10679,19 +9444,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
-"PU" = (
-/obj/effect/decal/cleanable/blood/trails{
-	color = "#808080";
-	icon_state = "trails_2";
-	name = "dried tracks"
-	},
-/obj/effect/decal/cleanable/blood{
-	color = "#808080";
-	name = "dried blood"
-	},
-/obj/effect/decal/cleanable/trail_holder,
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "PV" = (
 /obj/machinery/power/solar{
 	id = "foreport";
@@ -10709,12 +9461,19 @@
 /area/station/maintenance/solars/port/fore)
 "Qb" = (
 /obj/machinery/door/airlock/engineering,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "Qc" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /turf/open/floor/plating,
 /area/station/hallway/primary)
+"Qd" = (
+/obj/item/circuitboard/machine/ore_silo,
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "Qh" = (
 /obj/structure/closet/crate/engineering{
 	dir = 4;
@@ -10727,6 +9486,26 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/textured,
 /area/station/ai_monitored/command/storage/eva)
+"Qm" = (
+/obj/item/mod/module/storage,
+/obj/item/mod/module/welding,
+/obj/item/mod/module/rad_protection,
+/obj/item/mod/module/flashlight,
+/obj/item/mod/module/tether,
+/obj/item/mod/module/headprotector,
+/obj/item/mod/module/mouthhole{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/mod/module/magboot{
+	pixel_y = -2
+	},
+/obj/item/mod/module/rad_protection{
+	pixel_x = 1;
+	pixel_y = 3
+	},
+/turf/open/floor/iron/textured_half,
+/area/station/science/robotics/lab)
 "Qp" = (
 /obj/machinery/telecomms/hub/preset,
 /turf/open/floor/circuit/green/telecomms/mainframe,
@@ -10776,13 +9555,6 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/station/science/lobby)
-"Qv" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "arrow_down";
-	name = "drawing"
-	},
-/turf/open/floor/plating,
-/area/station/cargo/storage)
 "Qw" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -10824,14 +9596,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
-"QC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor5"
-	},
-/obj/effect/decal/cleanable/vomit,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "QD" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating,
@@ -10951,10 +9715,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/hallway/floor1/fore)
-"Rq" = (
-/obj/effect/decal/cleanable/greenglow/filled,
-/turf/open/floor/plating/airless,
-/area/station/science/xenobiology/hallway)
 "Rt" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
 	dir = 1
@@ -10979,6 +9739,13 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
+"RC" = (
+/obj/machinery/conveyor{
+	dir = 10;
+	id = "Trash"
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/disposal)
 "RF" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/iron,
@@ -10993,20 +9760,6 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/station/medical/chemistry)
-"RJ" = (
-/obj/effect/decal/cleanable/blood/trails{
-	color = "#808080";
-	icon_state = "trails_2";
-	name = "dried tracks"
-	},
-/obj/effect/decal/cleanable/blood{
-	color = "#808080";
-	icon_state = "floor5";
-	name = "dried blood"
-	},
-/obj/effect/decal/cleanable/trail_holder,
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "RL" = (
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
@@ -11028,7 +9781,7 @@
 	piping_layer = 2;
 	pipe_color = "#FF0000"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/iron/white,
 /area/station/medical/surgery)
 "RM" = (
 /obj/structure/cable,
@@ -11063,13 +9816,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
-"RO" = (
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "RQ" = (
 /obj/structure/closet/firecloset,
 /obj/structure/extinguisher_cabinet/directional/north,
@@ -11096,14 +9842,8 @@
 /turf/open/floor/iron/grimy,
 /area/station/medical/surgery)
 "RX" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff7b00";
-	dir = 5;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "5_2";
-	name = "orange pipe";
-	piping_layer = 2;
-	pipe_color = "#FF7B00"
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden{
+	dir = 5
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -11137,6 +9877,15 @@
 	pixel_x = 3;
 	pixel_y = -2;
 	amount = 15
+	},
+/obj/item/stack/sheet/mineral/wood{
+	pixel_x = 14;
+	pixel_y = 1;
+	amount = 8
+	},
+/obj/item/stack/sheet/cloth{
+	pixel_x = 9;
+	pixel_y = 15
 	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
@@ -11275,10 +10024,7 @@
 /area/station/engineering/atmos)
 "Sx" = (
 /obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 1;
-	icon_state = "connector";
-	name = "dark connector port";
-	pipe_color = "#454545"
+	dir = 1
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
@@ -11314,13 +10060,8 @@
 /area/station/medical/surgery)
 "SA" = (
 /obj/machinery/conveyor{
-	dir = 5;
-	icon_state = "conveyor1"
-	},
-/obj/item/food/deadmouse{
-	name = "mouse";
-	pixel_x = -2;
-	pixel_y = 5
+	id = "Kitchen_conv";
+	dir = 5
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
@@ -11386,16 +10127,10 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "SH" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff0000";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "red pipe";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
-	},
 /obj/machinery/light/directional/south,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 8
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "SI" = (
@@ -11406,21 +10141,15 @@
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "SN" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff0000";
-	dir = 9;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "9_2";
-	name = "red pipe";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
-	},
 /obj/machinery/meter/layer2,
 /obj/effect/mapping_helpers/airalarm/tlv_no_checks,
 /obj/effect/mapping_helpers/airalarm/engine_access,
 /obj/machinery/airalarm/directional/south,
 /obj/effect/mapping_helpers/airalarm/link{
 	chamber_id = "engine"
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 9
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -11506,39 +10235,16 @@
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
-"Tj" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_4"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "Tk" = (
 /obj/machinery/conveyor{
-	dir = 6;
-	icon_state = "conveyor1"
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = 3;
-	pixel_y = 0
-	},
-/obj/item/food/deadmouse{
-	dir = 8;
-	name = "mouse";
-	pixel_x = 2;
-	pixel_y = -6
+	id = "Kitchen_conv";
+	dir = 6
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
 "Tq" = (
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
-"Tr" = (
-/obj/structure/flora/bush/style_random,
-/turf/open/floor/grass,
-/area/station/hallway/primary/port)
 "Ts" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	color = "#0000ff";
@@ -11579,6 +10285,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
+/obj/machinery/conveyor{
+	id = "Shuttle_load";
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "TB" = (
@@ -11596,18 +10306,8 @@
 	icon_state = "9_2";
 	name = "red scrubbers pipe"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor4"
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
-"TE" = (
-/turf/open/floor/mineral/abductor,
-/area/station/hallway/primary/port)
 "TG" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -11644,16 +10344,10 @@
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "TJ" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#0000ff";
-	dir = 6;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "6_2";
-	name = "blue pipe";
-	piping_layer = 2;
-	pipe_color = "#0000FF"
-	},
 /obj/machinery/meter/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 6
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "TK" = (
@@ -11671,7 +10365,7 @@
 	},
 /obj/machinery/door/window/brigdoor{
 	dir = 8;
-	req_access = list()
+	req_access = list("xenobiology")
 	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
@@ -11711,12 +10405,7 @@
 /area/station/cargo/bitrunning/den)
 "Ub" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 4;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
+	dir = 4
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -11879,38 +10568,20 @@
 /obj/machinery/airalarm/directional/south{
 	req_access = list("engineering")
 	},
-/obj/effect/decal/cleanable/blood/gibs{
-	color = "#808080";
-	dir = 4;
-	icon_state = "gib5";
-	name = "rotting gibs"
-	},
-/obj/effect/decal/cleanable/blood/splatter{
-	color = "#808080";
-	icon_state = "gibbl2";
-	name = "dried blood"
-	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
-"UY" = (
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_2-old"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "UZ" = (
 /obj/structure/cable,
 /turf/open/floor/iron/herringbone,
 /area/station/engineering/storage_shared)
-"Vb" = (
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
+"Va" = (
+/obj/machinery/conveyor{
+	id = "Shuttle_load";
+	pixel_x = 0;
+	pixel_y = 0
 	},
 /turf/open/floor/plating,
-/area/station/hallway/primary/port)
+/area/station/cargo/storage)
 "Vc" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -11944,17 +10615,11 @@
 /turf/open/floor/iron/dark/diagonal,
 /area/station/engineering/gravity_generator)
 "Vm" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "engsm"
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
@@ -11966,15 +10631,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/hallway/primary)
-"Vq" = (
-/obj/item/stack/tile/iron/base{
-	dir = 4;
-	pixel_x = 3;
-	pixel_y = 1;
-	amount = 2
-	},
-/turf/open/floor/iron,
-/area/station/science/xenobiology)
 "Vr" = (
 /obj/structure/cable{
 	color = "#ffff00";
@@ -12014,25 +10670,13 @@
 /turf/open/floor/iron,
 /area/station/cargo)
 "Vy" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	dir = 15;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "15_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
 /obj/machinery/power/energy_accumulator/grounding_rod,
 /obj/structure/cable{
 	color = "#ffff00";
 	icon_state = "l2-1-2"
 	},
-/obj/effect/overlay/cap_visual{
-	color = "#00ff00";
-	icon_state = "3075_2"
-	},
 /obj/structure/window/plasma/spawner/directional/west,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/purple/hidden,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "Vz" = (
@@ -12065,27 +10709,6 @@
 /obj/machinery/monkey_recycler,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
-"VI" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/basic/regal_rat/controlled{
-	dir = 4;
-	icon_state = "regalrat_dead";
-	name = "feral regal rat (385)"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
-"VJ" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	icon_state = "conveyor1"
-	},
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "VN" = (
 /obj/machinery/atmospherics/pipe/smart{
 	color = "#0000ff";
@@ -12151,12 +10774,7 @@
 /area/station/medical/morgue)
 "VW" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
-	color = "#454545";
-	dir = 6;
-	icon_state = "pipe11-2";
-	name = "dark pipe";
-	piping_layer = 2;
-	pipe_color = "#454545"
+	dir = 6
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -12192,9 +10810,6 @@
 	piping_layer = 4;
 	pipe_color = "#0000FF"
 	},
-/obj/effect/decal/cleanable/blood/footprints{
-	icon_state = ""
-	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "VZ" = (
@@ -12213,13 +10828,6 @@
 	},
 /turf/open/floor/iron/textured_half,
 /area/station/science/robotics/lab)
-"Wc" = (
-/obj/effect/decal/cleanable/crayon{
-	icon_state = "cat";
-	name = "drawing"
-	},
-/turf/open/floor/plating,
-/area/station/cargo/bitrunning/den)
 "We" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor";
@@ -12235,11 +10843,10 @@
 /turf/open/floor/plating,
 /area/station/cargo)
 "Wi" = (
-/obj/structure/frame/computer,
-/obj/machinery/door/firedoor{
-	name = "�Starboard Primary Hallway firelock PBGVA";
-	id_tag = "PBGVA"
+/obj/structure/frame/computer{
+	dir = 1
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/station/hallway/primary/starboard)
 "Wj" = (
@@ -12345,14 +10952,8 @@
 /turf/closed/wall,
 /area/station/cargo)
 "WE" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#ff0000";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "red pipe";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -12375,16 +10976,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
 /area/station/solars/port/fore)
-"WK" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_3-old"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "WO" = (
 /mob/living/basic/goat/pete,
 /obj/structure/closet/crate/critter,
@@ -12395,25 +10986,17 @@
 /obj/structure/marker_beacon/burgundy,
 /turf/open/space/basic,
 /area/space/nearstation)
-"WT" = (
-/obj/effect/decal/cleanable/blood/trails{
-	color = "#808080";
-	icon_state = "trails_2";
-	name = "dried tracks"
+"WW" = (
+/obj/structure/window/spawner/directional/south,
+/obj/machinery/conveyor{
+	id = "Shuttle_load";
+	dir = 4
 	},
-/obj/effect/decal/cleanable/blood{
-	color = "#808080";
-	icon_state = "floor6";
-	name = "dried blood"
+/obj/structure/plasticflaps{
+	dir = 4
 	},
-/obj/effect/decal/cleanable/trail_holder,
-/obj/effect/decal/cleanable/blood/footprints{
-	color = "#808080";
-	icon_state = "";
-	name = "dried footprints"
-	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "WX" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating,
@@ -12619,11 +11202,11 @@
 /area/station/cargo)
 "Xe" = (
 /obj/machinery/door/window/brigdoor{
-	req_access = list()
+	req_access = list("xenobiology")
 	},
 /obj/machinery/door/window/brigdoor{
 	dir = 1;
-	req_access = list()
+	req_access = list("xenobiology")
 	},
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology)
@@ -12642,25 +11225,8 @@
 /area/station/engineering/break_room)
 "Xi" = (
 /obj/machinery/conveyor{
-	dir = 1;
-	icon_state = "conveyor0"
-	},
-/obj/item/food/deadmouse{
-	dir = 8;
-	name = "mouse";
-	pixel_x = 2;
-	pixel_y = -6
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -5;
-	pixel_y = 11
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -1
+	id = "Kitchen_conv";
+	dir = 1
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
@@ -12716,15 +11282,8 @@
 /turf/open/floor/plating,
 /area/station/hallway/primary)
 "Xu" = (
-/obj/machinery/atmospherics/pipe/smart{
-	color = "#00ff00";
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "3_2";
-	name = "green pipe";
-	piping_layer = 2;
-	pipe_color = "#00FF00"
-	},
 /obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/hidden,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "Xv" = (
@@ -12732,13 +11291,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/solars/port/fore)
 "Xw" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	icon_state = "scrub_on";
-	name = "�Xenobiology red air scrubber 3z23k";
-	id_tag = "3z23k";
-	piping_layer = 2;
-	pipe_color = "#FF0000"
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "Xy" = (
@@ -12789,7 +11342,7 @@
 /area/station/medical/medbay/lobby)
 "XB" = (
 /obj/machinery/conveyor_switch{
-	icon_state = "switch-rev"
+	id = "Kitchen_conv"
 	},
 /obj/structure/table,
 /obj/item/food/pizzaslice/margherita{
@@ -13129,14 +11682,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "Ya" = (
-/obj/machinery/atmospherics/components/unary/vent_pump{
-	icon_state = "vent_out";
-	name = "�Xenobiology blue air vent GqzQA";
-	pixel_x = 5;
-	id_tag = "GqzQA";
-	piping_layer = 4;
-	pipe_color = "#0000FF"
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology)
@@ -13236,11 +11782,6 @@
 	piping_layer = 2;
 	pipe_color = "#FF0000"
 	},
-/obj/item/storage/box/balloons{
-	dir = 4;
-	pixel_x = -3;
-	pixel_y = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -13253,24 +11794,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/station/cargo)
-"Yz" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
-	color = "#0000ff";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_4";
-	name = "blue air supply pipe"
-	},
-/obj/effect/decal/cleanable/vomit/old{
-	icon_state = "vomit_3-old"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor4"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "YA" = (
 /turf/closed/wall/r_wall,
 /area/space/nearstation)
@@ -13375,7 +11898,7 @@
 /turf/open/floor/catwalk_floor,
 /area/station/hallway/primary)
 "YN" = (
-/obj/machinery/smartfridge/chemistry,
+/obj/machinery/smartfridge/chemistry/preloaded,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/floor/iron/white,
@@ -13400,6 +11923,13 @@
 	dir = 1
 	},
 /turf/closed/wall,
+/area/station/cargo/storage)
+"YV" = (
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "d";
+	name = "letter"
+	},
+/turf/open/floor/plating,
 /area/station/cargo/storage)
 "YX" = (
 /turf/open/floor/plating,
@@ -13450,6 +11980,12 @@
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /turf/open/floor/iron,
 /area/station/hallway/primary)
+"Zk" = (
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
 "Zl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	color = "#0000ff";
@@ -13460,28 +11996,9 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
-"Zm" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
-	color = "#ff0000";
-	dir = 4;
-	icon = 'icons/obj/pipes_n_cables/!pipes_bitmask.dmi';
-	icon_state = "12_2";
-	name = "red scrubbers pipe"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil/slippery{
-	icon_state = "floor4"
-	},
-/obj/effect/decal/cleanable/vomit{
-	icon_state = "vomit_3"
-	},
-/turf/open/floor/plating,
-/area/station/engineering/break_room)
 "Zp" = (
-/obj/machinery/door/firedoor{
-	name = "�Starboard Primary Hallway firelock smwhu";
-	id_tag = "smwhu"
-	},
+/obj/machinery/door/firedoor,
+/obj/item/circuitboard/machine/ore_redemption,
 /turf/open/floor/plating,
 /area/station/hallway/primary/starboard)
 "Zq" = (
@@ -13609,17 +12126,12 @@
 /area/station/engineering/atmos)
 "ZK" = (
 /obj/machinery/conveyor{
-	dir = 8;
-	icon_state = "conveyor1"
+	id = "Kitchen_conv";
+	dir = 8
 	},
 /obj/item/holosign_creator/engineering{
 	pixel_x = -4;
 	pixel_y = -5
-	},
-/obj/item/food/deadmouse{
-	icon_state = "mouse_white_dead";
-	name = "mouse";
-	pixel_x = -1
 	},
 /turf/open/floor/iron/large,
 /area/station/service/kitchen)
@@ -31511,10 +30023,10 @@ PX
 PX
 PX
 PX
-Vb
-IB
-hh
-ai
+JP
+kA
+IG
+IG
 kA
 jd
 vW
@@ -31740,7 +30252,7 @@ GV
 GV
 fi
 gd
-Nk
+JU
 uB
 Sr
 Zb
@@ -31756,10 +30268,10 @@ gR
 ej
 nd
 Er
-Nh
 nd
-BQ
-sJ
+nd
+nd
+nd
 ej
 mn
 Qq
@@ -31769,9 +30281,9 @@ Qq
 Xf
 xX
 Xf
-yb
+Xf
 IG
-kc
+IG
 Xf
 UX
 vW
@@ -32014,9 +30526,9 @@ ej
 mQ
 CA
 CG
-Od
-yD
-bg
+nd
+nd
+nd
 ej
 Xf
 Xf
@@ -32026,7 +30538,7 @@ Xf
 Xf
 xX
 Xf
-IN
+Xf
 IG
 IG
 Xf
@@ -32268,12 +30780,12 @@ KQ
 KQ
 KQ
 KQ
-vd
-WK
+ps
+nd
 wy
-jX
-lH
-yW
+nd
+nd
+nd
 ej
 Xf
 Xf
@@ -32284,7 +30796,7 @@ Xf
 wA
 Xf
 Xf
-CK
+IG
 IG
 Xf
 VY
@@ -32525,16 +31037,16 @@ ps
 ps
 ps
 ik
-lw
+ps
 xc
 gT
 DV
-ma
+uX
 uX
 AR
 Vt
-pV
-pV
+Vt
+Vt
 Vt
 Vt
 Vt
@@ -32782,16 +31294,16 @@ KQ
 KQ
 KQ
 KQ
-Od
-Mc
-Zm
+nd
+nd
+wy
 Ns
 Om
-bC
+nd
 ej
 Xf
-gD
-hF
+Xf
+Xf
 Xf
 Xf
 Xf
@@ -32801,7 +31313,7 @@ Xf
 oi
 sY
 Xf
-Nr
+bP
 vW
 no
 XA
@@ -33039,12 +31551,12 @@ gR
 gR
 gR
 ej
-xk
-ft
-bA
-ml
-bM
-ya
+nd
+nd
+wy
+Xg
+nd
+nd
 ej
 Xf
 Xf
@@ -33053,12 +31565,12 @@ Xf
 Qh
 Xf
 xX
-HD
+Xf
 Xf
 si
 kl
 Xf
-KR
+bP
 vW
 dR
 dR
@@ -33265,12 +31777,12 @@ sL
 sL
 sL
 fG
-fG
+In
 fG
 pl
 GV
 GV
-Qb
+lE
 pR
 Qb
 pR
@@ -33296,12 +31808,12 @@ sL
 sL
 sL
 ej
-QC
-Od
-we
-vy
-Dw
-gU
+nd
+nd
+wy
+Xg
+nd
+nd
 ej
 PX
 JP
@@ -33310,12 +31822,12 @@ xX
 xX
 PX
 PX
-zV
+WG
 Xf
 si
 kl
 Xf
-JY
+zx
 by
 YN
 LJ
@@ -33525,7 +32037,7 @@ eQ
 eQ
 eQ
 in
-Pf
+Zk
 xv
 GR
 pR
@@ -33553,12 +32065,12 @@ gR
 gR
 gR
 ej
-bt
-bj
-Du
-Yz
-my
-wW
+nd
+nd
+wy
+Xg
+nd
+nd
 ej
 Xf
 Xf
@@ -33567,11 +32079,11 @@ Xf
 Xf
 Xf
 PX
-co
-ul
+Xf
+lB
 Ev
 oP
-EG
+UC
 mr
 RI
 fD
@@ -33810,12 +32322,12 @@ gR
 gR
 gR
 ej
-AF
-hX
+nd
+CA
 TD
 Xg
-pG
-Od
+nd
+nd
 ej
 Xf
 Xf
@@ -33824,9 +32336,9 @@ Xf
 Xf
 Xf
 PX
-yb
 Xf
-mR
+Xf
+si
 kl
 Xf
 bP
@@ -34067,11 +32579,11 @@ gR
 gR
 gR
 ej
-RO
-Tj
-Od
+nd
+nd
+nd
 Xg
-bW
+nd
 nd
 ej
 Xf
@@ -34081,7 +32593,7 @@ Xf
 Xf
 Xf
 Gg
-yb
+Xf
 Xf
 si
 kl
@@ -34324,11 +32836,11 @@ gR
 gR
 gR
 GF
-BM
-Od
+nd
+nd
 nd
 Xg
-UY
+nd
 nd
 ej
 Xf
@@ -34338,11 +32850,11 @@ Xf
 Xf
 EF
 LR
-yb
+Xf
 Xf
 si
 kl
-yb
+Xf
 bP
 RI
 Op
@@ -34581,11 +33093,11 @@ gR
 gR
 gR
 bB
-VI
-Od
-Od
+nd
+nd
+nd
 Fz
-wn
+Om
 nd
 ej
 Xf
@@ -34599,7 +33111,7 @@ Xf
 Xf
 si
 kl
-yb
+Xf
 bP
 RI
 Op
@@ -34838,9 +33350,9 @@ gR
 gR
 gR
 ej
-CS
-bW
-zo
+nd
+nd
+nd
 nd
 nd
 nd
@@ -34852,11 +33364,11 @@ Xf
 Xf
 Xf
 PX
-yb
-yb
+Xf
+Xf
 si
-VJ
-yb
+kl
+Xf
 bP
 RI
 Zv
@@ -35109,11 +33621,11 @@ PX
 PX
 PX
 PX
-va
-yb
+WG
+Xf
 si
-VJ
-yb
+kl
+Xf
 zx
 by
 by
@@ -35357,21 +33869,21 @@ gR
 gR
 gR
 gR
-Mj
+gR
 PX
-vO
-vO
-Tr
-AE
-AE
-AE
+Xf
+Xf
+Xf
+Xf
+Xf
+Xf
 PX
-yb
-yb
+Xf
+Xf
 JN
 jB
-yb
-Nr
+Xf
+bP
 PX
 JP
 JP
@@ -35385,7 +33897,7 @@ JP
 JP
 JP
 ip
-JP
+Ls
 zg
 gR
 gR
@@ -35616,18 +34128,18 @@ gR
 gR
 gR
 PX
-vO
-Nv
-vO
-AE
-AE
-AE
+Xf
+Xf
+Xf
+Xf
+Xf
+Xf
 CN
-jI
-RJ
-sZ
-PU
-WT
+Xf
+Xf
+IG
+IG
+Xf
 No
 GT
 Ca
@@ -35873,12 +34385,12 @@ gR
 gR
 gR
 PX
-vO
-vO
-vO
-AE
-NB
-AE
+Xf
+Xf
+Xf
+Xf
+Xf
+Xf
 PX
 Xf
 Xf
@@ -36130,7 +34642,7 @@ gR
 gR
 gR
 PX
-vO
+Xf
 PX
 PX
 PX
@@ -37416,7 +35928,7 @@ gR
 gR
 PX
 Xf
-ni
+Xf
 Xf
 Xf
 Xf
@@ -37424,7 +35936,7 @@ CN
 JP
 Xf
 Xf
-wP
+oi
 sY
 Xf
 Ji
@@ -37673,7 +36185,7 @@ gR
 gR
 PX
 JP
-EN
+JP
 Xf
 Xf
 JP
@@ -37681,7 +36193,7 @@ PX
 JP
 Xf
 Xf
-si
+fR
 kl
 Xf
 SP
@@ -37930,7 +36442,7 @@ gR
 gR
 PX
 Xf
-Gl
+Xf
 Xf
 PX
 PX
@@ -37938,8 +36450,8 @@ PX
 PX
 ob
 ob
-si
-qb
+fR
+kl
 Xf
 SP
 Sd
@@ -38966,7 +37478,7 @@ PX
 PX
 Xf
 Xf
-Nl
+si
 kl
 Xf
 OH
@@ -39216,14 +37728,14 @@ gR
 PX
 Xf
 Xf
-wZ
-lL
-TE
-TE
-qc
+Xf
+PX
+Xf
+Xf
+PX
 bq
 bq
-nh
+si
 kl
 Xf
 Wp
@@ -39473,11 +37985,11 @@ gR
 PX
 JP
 JP
-yU
-lL
-TE
-TE
-qc
+Xf
+PX
+Xf
+Xf
+PX
 bq
 bq
 si
@@ -39730,11 +38242,11 @@ gR
 PX
 Xf
 Xf
-fB
-td
-lL
+Xf
+PX
+PX
 wl
-qc
+PX
 bq
 bq
 si
@@ -39988,7 +38500,7 @@ PX
 Xf
 Xf
 Xf
-ur
+Xf
 Xf
 Xf
 CN
@@ -40257,7 +38769,7 @@ Xf
 mH
 re
 JA
-pp
+Xi
 DU
 Xi
 QS
@@ -40508,7 +39020,7 @@ Gt
 Gt
 Xf
 lB
-jh
+Ev
 oP
 UC
 Yv
@@ -41018,7 +39530,7 @@ lm
 yC
 yC
 lm
-bo
+cZ
 Gt
 Xf
 JP
@@ -41029,7 +39541,7 @@ Wp
 YP
 Eq
 hp
-hp
+oc
 hp
 hp
 ZL
@@ -41270,7 +39782,7 @@ gR
 gR
 sL
 Gt
-bo
+cD
 lm
 yC
 yC
@@ -41784,12 +40296,12 @@ gR
 gR
 gR
 Gt
-bo
-dJ
-eo
-iv
+NS
 lm
-bo
+yC
+gw
+lm
+Qm
 Gt
 Xf
 Xf
@@ -42051,7 +40563,7 @@ Gt
 Xf
 Xf
 JN
-ec
+jB
 Xf
 Wp
 YP
@@ -42821,7 +41333,7 @@ DE
 pq
 Tq
 Tq
-VA
+Rv
 Rv
 Tq
 Ht
@@ -43078,7 +41590,7 @@ pD
 YY
 zU
 zU
-Ak
+Xn
 Xn
 zU
 sN
@@ -43850,7 +42362,7 @@ nl
 Tq
 Tq
 VA
-VA
+Rv
 Tq
 JT
 nl
@@ -44125,7 +42637,7 @@ iO
 iO
 iO
 Eg
-Eg
+DL
 Eg
 uH
 uH
@@ -44363,7 +42875,7 @@ dk
 nl
 VA
 VA
-or
+VA
 VA
 VA
 KT
@@ -44372,7 +42884,7 @@ CY
 fq
 eP
 eP
-eP
+yH
 eP
 eP
 eP
@@ -44620,15 +43132,14 @@ dk
 nl
 VA
 VA
-Ri
 VA
 VA
+jt
 KT
 DN
-sB
+eP
 xi
 eP
-hv
 eP
 eP
 eP
@@ -44638,8 +43149,9 @@ eP
 eP
 eP
 eP
-jn
-su
+eP
+tW
+Jl
 nb
 gR
 gR
@@ -44850,7 +43362,7 @@ Jp
 CJ
 ro
 CJ
-Rq
+CJ
 CJ
 CJ
 CJ
@@ -44879,12 +43391,12 @@ VA
 VA
 VA
 VA
-VA
+or
 KT
-CH
+DN
 MR
-xi
-Ih
+kC
+eP
 eP
 eP
 eP
@@ -44896,8 +43408,8 @@ eP
 eP
 eP
 wr
-ba
-aI
+Jl
+nb
 gR
 gR
 gR
@@ -45136,13 +43648,13 @@ VA
 VA
 VA
 VA
-VA
+Ri
 KT
 Zp
 ES
 YO
 eP
-uN
+eP
 eP
 eP
 eP
@@ -45394,19 +43906,19 @@ VA
 VA
 VA
 VA
-KT
+wE
 jJ
 dH
 yI
-Ah
 PJ
-eP
-eP
-eP
-eP
-eP
-eP
-eP
+PJ
+lD
+lD
+lD
+lD
+lD
+lD
+lD
 KP
 eP
 jn
@@ -45617,15 +44129,15 @@ YD
 Ny
 YD
 vi
-vi
-vi
-YD
-vi
-vi
+DA
 vi
 YD
-ND
-Ny
+vi
+DA
+vi
+YD
+yV
+Bv
 xb
 QW
 Ya
@@ -45654,12 +44166,12 @@ VA
 sE
 Bt
 xG
-Qv
+eP
 eP
 nz
-eP
-eP
-Bo
+Va
+na
+oH
 fP
 rg
 Bo
@@ -45668,7 +44180,7 @@ ZT
 eP
 jn
 Jl
-cA
+of
 gR
 gR
 gR
@@ -45874,7 +44386,7 @@ QW
 Ny
 QW
 YD
-TR
+nD
 YD
 QW
 YD
@@ -45882,7 +44394,7 @@ TR
 YD
 QW
 PF
-AS
+Ny
 VG
 QW
 Cm
@@ -45911,13 +44423,13 @@ VA
 ti
 Bt
 xG
-eP
-eP
-eP
-eP
+Ne
+Ne
+Ne
+Ne
 Dy
 Tz
-hc
+lD
 YU
 zv
 Td
@@ -46135,12 +44647,12 @@ Ny
 Ny
 sM
 Ny
-Vq
+Ny
 Ny
 sM
 Ny
 Ny
-Ny
+bN
 QW
 QW
 bp
@@ -46166,18 +44678,18 @@ VA
 VA
 VA
 VA
-nl
-eW
+Ci
 bT
 bT
 bT
 bT
-eP
-Bo
+bT
+iO
+WW
 cV
 iO
 iO
-eP
+ZT
 eP
 eP
 iO
@@ -46382,8 +44894,8 @@ gR
 gR
 gR
 QW
+ID
 vi
-LE
 Xe
 nH
 ZE
@@ -46421,28 +44933,28 @@ VA
 VA
 VA
 VA
-eh
 VA
-nl
+VA
+Ci
 eP
 eP
 eP
 eP
-eW
+bT
 al
-JD
-JD
+rm
+rm
 al
 iO
-eP
-eP
-eP
-eP
-eP
-eP
-xo
-xo
-xo
+rX
+lD
+lD
+lD
+lD
+bd
+yA
+yA
+zf
 xo
 Cz
 gR
@@ -46680,27 +45192,27 @@ VA
 VA
 VA
 VA
-nl
+Ci
 eP
 eP
+Qd
 eP
-eP
-fW
+bT
 al
 JD
 JD
 al
 iO
 eP
-Wc
-pH
-pH
-pH
-Wc
+eP
+eP
+eP
+YV
+iO
+dx
 xo
-xo
-xo
-xo
+CX
+OQ
 Qt
 gR
 gR
@@ -46934,30 +45446,30 @@ nl
 VA
 VA
 VA
-kU
 VA
 VA
-nl
+VA
+BP
 eP
 eP
 eP
 eP
-fW
+bT
 al
 JD
 JD
 al
-iO
-eP
+ug
 pH
 pH
 pH
 pH
 pH
+ug
 xo
-xo
-xo
-xo
+Ec
+CX
+OQ
 Qt
 gR
 gR
@@ -47159,11 +45671,11 @@ YD
 Ny
 YD
 vi
-vi
+DA
 vi
 YD
 vi
-vi
+DA
 vi
 YD
 Uv
@@ -47194,27 +45706,27 @@ VA
 VA
 VA
 VA
-nl
+Ci
 eP
 eP
 eP
 eP
-fW
+bT
 ER
 JD
 JD
 ER
-iO
-eP
+ug
 pH
 pH
 pH
 pH
 pH
+ug
 xo
 PN
-xo
-xo
+CU
+OQ
 Qt
 gR
 gR
@@ -47451,27 +45963,27 @@ VA
 VA
 VA
 VA
-nl
+Ci
 eP
 eP
 eP
 eP
-fW
+bT
 DO
 al
 al
 DO
-iO
-eP
-Wc
+ug
 pH
 pH
-pH
-Wc
-xo
+Ck
+Ck
+Ff
+ug
+xp
 Mi
-xo
-xo
+EU
+RC
 Qt
 gR
 gR
@@ -47708,26 +46220,26 @@ VA
 VA
 VA
 VA
-nl
-iO
-iO
-iO
-iO
-iO
-iO
-iO
+Ci
+bT
+bT
+bT
+bT
+bT
 iO
 iO
 iO
 iO
 ug
+ug
+Fo
 ug
 ug
 ug
 ug
 Zs
 Zs
-Zs
+Fv
 Zs
 Zs
 sL
@@ -54381,7 +52893,7 @@ yT
 yT
 yT
 yT
-yT
+Kx
 cf
 iT
 VA
