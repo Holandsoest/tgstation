@@ -1,0 +1,65 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"b" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/supply)
+"e" = (
+/obj/machinery/door/airlock/titanium{
+	name = "Supply Shuttle Airlock"
+	},
+/obj/docking_port/mobile/supply{
+	dir = 2
+	},
+/turf/open/floor/bronze/flat,
+/area/shuttle/supply)
+"g" = (
+/obj/machinery/power/shuttle_engine/heater,
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/structure/window/reinforced/spawner/directional/north,
+/turf/open/floor/plating/airless,
+/area/shuttle/supply)
+"p" = (
+/turf/open/floor/bronze/flat,
+/area/shuttle/supply)
+"s" = (
+/obj/machinery/power/shuttle_engine/propulsion/burst,
+/turf/open/floor/plating/airless,
+/area/shuttle/supply)
+"u" = (
+/obj/machinery/conveyor{
+	id = "Shuttle_load"
+	},
+/obj/machinery/door/airlock/titanium{
+	name = "Supply Shuttle Airlock"
+	},
+/turf/open/floor/bronze/flat,
+/area/shuttle/supply)
+
+(1,1,1) = {"
+b
+b
+b
+g
+s
+"}
+(2,1,1) = {"
+e
+p
+p
+p
+b
+"}
+(3,1,1) = {"
+u
+p
+p
+p
+b
+"}
+(4,1,1) = {"
+b
+b
+b
+g
+s
+"}
