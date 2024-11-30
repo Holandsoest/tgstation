@@ -2700,7 +2700,7 @@
 /obj/item/pen,
 /obj/machinery/camera/directional/east{
 	c_tag = "AI Core - east";
-	network = list("aicore")
+	network = list("ss13","aiupload")
 	},
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai)
@@ -8247,7 +8247,8 @@
 /obj/structure/cable,
 /obj/machinery/camera/motion/directional/west{
 	pixel_x = 0;
-	pixel_y = -6
+	pixel_y = -6;
+	network = list("ss13","aiupload")
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/circuit/green,
@@ -8642,11 +8643,6 @@
 "avZ" = (
 /obj/structure/table/glass,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/structure/sign/poster/quirk/science_slogan{
-	pixel_x = -28;
-	pixel_y = 3;
-	desc = "Research and Document, that is what sets your department appart from the others. In blue marker it says 'Please stop tasting all research samples, it is not called Run and Defecate.'"
-	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "awa" = (
@@ -9420,14 +9416,22 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "axW" = (
-/obj/machinery/computer/security/telescreen{
-	name = "Security security monitor monitor";
-	network = list("security")
-	},
 /obj/structure/table/wood,
 /obj/machinery/recharger{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/item/paper_bin{
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/obj/item/folder/red{
 	pixel_x = -11;
-	pixel_y = 9
+	pixel_y = 3
+	},
+/obj/item/pen/red/security{
+	pixel_x = -7;
+	pixel_y = 5
 	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hos)
@@ -9458,9 +9462,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "ayb" = (
-/obj/machinery/chem_dispenser{
-	layer = 2.7
-	},
+/obj/machinery/chem_dispenser,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
@@ -11401,12 +11403,7 @@
 /area/station/science/xenobiology)
 "aDk" = (
 /obj/structure/table/glass,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching output from station security cameras.";
-	name = "Security Camera Monitor";
-	network = list("ss13");
-	dir = 4
-	},
+/obj/machinery/computer/security/wooden_tv,
 /turf/open/floor/carpet/executive,
 /area/station/command/bridge)
 "aDl" = (
@@ -14901,7 +14898,9 @@
 /obj/structure/cable,
 /obj/machinery/recharge_station,
 /obj/machinery/status_display/evac/directional/east,
-/obj/machinery/camera/motion/directional/east,
+/obj/machinery/camera/motion/directional/east{
+	network = list("ss13","aiupload")
+	},
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai_upload)
 "aLV" = (
@@ -19780,22 +19779,16 @@
 	name = "AI Upload Turret Control";
 	pixel_y = 28
 	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the ai_upload.";
-	dir = 1;
-	name = "AI Monitor";
-	network = list("aiupload", "aicore");
-	pixel_y = -29
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/camera/directional/north{
 	c_tag = "AI Upload - airlock";
-	network = list("aiupload")
+	network = list("ss13","aiupload")
 	},
 /obj/effect/spawner/random/engineering/tracking_beacon,
+/obj/machinery/computer/security/telescreen/aiupload/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai_upload)
 "aXW" = (
@@ -20644,11 +20637,6 @@
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
 "crB" = (
-/obj/machinery/door/window/right/directional/south{
-	name = "Containment Pen #2";
-	req_access = list("xenobiology");
-	dir = 8
-	},
 /obj/effect/turf_decal/board_number/two{
 	pixel_y = 2
 	},
@@ -20658,6 +20646,10 @@
 	},
 /obj/effect/turf_decal/caution/stand_clear,
 /obj/machinery/door/firedoor/heavy,
+/obj/machinery/door/window/right/directional/west{
+	name = "Containment Pen #2";
+	req_access = list("xenobiology")
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/science/xenobiology)
 "cyc" = (
@@ -20944,10 +20936,9 @@
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
 "lRT" = (
-/obj/machinery/door/window/left/directional/south{
+/obj/machinery/door/window/left/directional/west{
 	name = "Containment Pen #2";
-	req_access = list("xenobiology");
-	dir = 8
+	req_access = list("xenobiology")
 	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
@@ -21110,11 +21101,6 @@
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "qVR" = (
-/obj/machinery/door/window/left/directional/east{
-	name = "Maximum Security Test Chamber";
-	req_access = list("xenobiology");
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible,
 /obj/structure/cable,
 /obj/machinery/door/poddoor/preopen{
@@ -21123,10 +21109,13 @@
 	},
 /obj/effect/turf_decal/caution/stand_clear,
 /obj/machinery/door/firedoor/heavy,
-/obj/machinery/door/window/left/directional/east{
-	name = "Test Chamber";
-	req_access = list("xenobiology");
-	dir = 2
+/obj/machinery/door/window/brigdoor/left/directional/north{
+	name = "Maximum Security Test Chamber";
+	req_access = list("xenobiology")
+	},
+/obj/machinery/door/window/brigdoor/left/directional/south{
+	name = "Maximum Security Test Chamber";
+	req_access = list("xenobiology")
 	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
@@ -21247,6 +21236,12 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
+"tOP" = (
+/obj/structure/sign/poster/quirk/science_slogan{
+	desc = "Research and Document, that is what sets your department appart from the others. In blue marker it says 'Please stop tasting all research samples, it is not called Run and Defecate.'"
+	},
+/turf/closed/wall,
+/area/station/science/research)
 "tYh" = (
 /obj/machinery/airalarm/directional/south,
 /obj/machinery/computer/crew{
@@ -50466,7 +50461,7 @@ aJH
 aJH
 aJH
 aJH
-aJH
+tOP
 aKc
 aJF
 aQu
