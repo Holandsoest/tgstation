@@ -2117,6 +2117,7 @@
 /area/station/tcommsat/server)
 "mw" = (
 /obj/effect/landmark/observer_start,
+/obj/effect/spawner/xmastree,
 /turf/open/floor/glass,
 /area/station/hallway/primary)
 "mz" = (

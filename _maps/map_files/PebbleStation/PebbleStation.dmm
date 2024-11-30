@@ -632,8 +632,9 @@
 /area/station/hallway/primary/central)
 "abF" = (
 /obj/structure/sign/poster/contraband/lusty_xenomorph/directional/east,
+/obj/structure/lattice,
 /turf/open/space/basic,
-/area/space)
+/area/space/nearstation)
 "abH" = (
 /turf/closed/wall/r_wall,
 /area/station/science/ordnance)
@@ -2376,10 +2377,6 @@
 /obj/structure/sign/warning/vacuum/external/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
-"afW" = (
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space)
 "afX" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/machinery/telecomms/receiver/preset_right,
@@ -2787,10 +2784,6 @@
 /obj/structure/window/reinforced/spawner/directional/west,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
-"agS" = (
-/obj/item/v8_engine,
-/turf/open/space/basic,
-/area/space)
 "agT" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 8
@@ -4234,7 +4227,7 @@
 /obj/item/stack/sheet/plasteel/fifty,
 /obj/item/stack/sheet/rglass/fifty,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "akO" = (
 /obj/machinery/processor/slime,
 /turf/open/floor/iron/white,
@@ -4260,7 +4253,7 @@
 "akS" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "akT" = (
 /obj/machinery/door/airlock/external{
 	name = "Transport Airlock"
@@ -4980,9 +4973,6 @@
 "amF" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 8
@@ -5219,7 +5209,7 @@
 "anl" = (
 /obj/structure/closet/crate/engineering/electrical,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "anm" = (
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 8
@@ -5681,8 +5671,9 @@
 /area/station/medical/medbay/lobby)
 "aoy" = (
 /obj/structure/sign/warning/fire/directional/east,
+/obj/structure/lattice,
 /turf/open/space/basic,
-/area/space)
+/area/space/nearstation)
 "aoz" = (
 /obj/machinery/vending/games,
 /turf/open/floor/wood,
@@ -7217,8 +7208,9 @@
 /area/station/command/heads_quarters/hop)
 "asp" = (
 /obj/structure/sign/poster/contraband/clown/directional/north,
+/obj/structure/lattice,
 /turf/open/space/basic,
-/area/space)
+/area/space/nearstation)
 "asq" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 4
@@ -7660,6 +7652,9 @@
 "atA" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 9
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
 	},
 /turf/open/floor/iron,
 /area/station/security/warden)
@@ -8357,7 +8352,7 @@
 /area/station/tcommsat)
 "avo" = (
 /turf/closed/wall,
-/area/space)
+/area/space/nearstation)
 "avp" = (
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
@@ -8904,8 +8899,9 @@
 /area/station/commons/dorms)
 "awE" = (
 /obj/structure/sign/warning/hot_temp/directional/east,
+/obj/structure/lattice,
 /turf/open/space/basic,
-/area/space)
+/area/space/nearstation)
 "awF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
 	dir = 4
@@ -9634,7 +9630,7 @@
 "ayv" = (
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "ayw" = (
 /obj/machinery/modular_computer/preset/id,
 /turf/open/floor/wood,
@@ -9848,11 +9844,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
-"azb" = (
-/obj/structure/lattice,
-/obj/item/toy/plush/shark,
-/turf/open/space/basic,
-/area/space/nearstation)
 "azc" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -9885,7 +9876,7 @@
 	},
 /obj/structure/disposalpipe/trunk,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "azh" = (
 /obj/machinery/door/airlock/external{
 	name = "Departure Lounge Airlock"
@@ -10534,7 +10525,7 @@
 "aAP" = (
 /obj/structure/closet/crate/solarpanel_small,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "aAQ" = (
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
@@ -10666,7 +10657,7 @@
 "aBf" = (
 /obj/item/stack/cable_coil,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "aBg" = (
 /obj/structure/cable,
 /obj/machinery/light/small/directional/west,
@@ -13774,7 +13765,7 @@
 /area/station/hallway/primary/central)
 "aIW" = (
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "aIX" = (
 /obj/machinery/door/poddoor/incinerator_ordmix,
 /turf/open/floor/engine/vacuum,
@@ -13804,7 +13795,7 @@
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/iron/fifty,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "aJb" = (
 /turf/closed/wall/r_wall,
 /area/station/hallway/secondary/exit/departure_lounge)
@@ -16014,7 +16005,7 @@
 /obj/structure/frame/machine,
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "aOA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -16937,7 +16928,7 @@
 "aQC" = (
 /obj/structure/frame/computer,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "aQD" = (
 /obj/machinery/chem_heater/withbuffer,
 /turf/open/floor/iron/white,
@@ -18250,7 +18241,7 @@
 /obj/item/stack/sheet/iron/fifty,
 /obj/structure/closet/crate,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "aTY" = (
 /obj/machinery/atmospherics/components/tank/oxygen{
 	dir = 4
@@ -18575,7 +18566,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "aUM" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
@@ -20766,6 +20757,11 @@
 	},
 /turf/open/floor/plating,
 /area/station/science/xenobiology)
+"fVo" = (
+/obj/structure/cable,
+/obj/effect/landmark/start/psychologist,
+/turf/open/floor/iron/white,
+/area/station/medical/medbay/lobby)
 "gVs" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -20782,6 +20778,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
+"hut" = (
+/obj/structure/lattice,
+/obj/item/v8_engine,
+/turf/open/space/basic,
+/area/space/nearstation)
 "hMq" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -20977,6 +20978,11 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
+"mPX" = (
+/obj/item/toy/plush/shark,
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space/nearstation)
 "mZr" = (
 /obj/machinery/camera/directional/east{
 	c_tag = "Xeno - Pen #2";
@@ -38285,11 +38291,11 @@ aDO
 aDO
 aDO
 aDO
-afW
-afW
-afW
+alk
+alk
+alk
 aTX
-afW
+alk
 aIW
 aDO
 aIW
@@ -38542,14 +38548,14 @@ aDO
 aDO
 aDO
 aDO
-afW
+alk
 aDO
 aDO
 aIW
 aIW
 aIW
-afW
-afW
+alk
+alk
 aDO
 aDO
 aDO
@@ -38802,11 +38808,11 @@ aDO
 aIW
 aDO
 aDO
-afW
-afW
+alk
+alk
 aDO
 aDO
-afW
+alk
 aDO
 aDO
 aDO
@@ -39059,11 +39065,11 @@ aDO
 aIW
 aDO
 aDO
-afW
+alk
 anl
-afW
+alk
 aDO
-afW
+alk
 aDO
 aDO
 aDO
@@ -39314,8 +39320,8 @@ aDO
 aDO
 aDO
 avo
-afW
-afW
+alk
+alk
 aIW
 aIW
 aIW
@@ -39574,10 +39580,10 @@ aIW
 aDO
 akN
 aIW
-afW
+alk
 aJa
-afW
-afW
+alk
+alk
 aDO
 aDO
 aDO
@@ -39827,14 +39833,14 @@ aDO
 aDO
 aDO
 aDO
-afW
+alk
 aDO
 aDO
 aIW
 aIW
 aIW
 aDO
-afW
+alk
 aDO
 aDO
 aDO
@@ -40084,12 +40090,12 @@ aDO
 aDO
 aDO
 aDO
-afW
+alk
 aDO
 aDO
-afW
+alk
 aDO
-afW
+alk
 aDO
 aIW
 aDO
@@ -40341,7 +40347,7 @@ aDO
 aDO
 aDO
 aDO
-afW
+alk
 aDO
 aDO
 aIW
@@ -40604,7 +40610,7 @@ aIW
 aIW
 aOz
 aQC
-afW
+alk
 avo
 aAv
 azr
@@ -40857,12 +40863,12 @@ aDO
 aDO
 avo
 aIW
-afW
-afW
+alk
+alk
 ayv
-afW
-afW
-afW
+alk
+alk
+alk
 aAv
 aoF
 aAv
@@ -41118,7 +41124,7 @@ aIW
 aIW
 aIW
 aBf
-afW
+alk
 aIW
 aAv
 avR
@@ -42444,7 +42450,7 @@ alk
 aDO
 aDO
 aDO
-aDO
+alk
 amt
 auh
 aek
@@ -42701,7 +42707,7 @@ alk
 aDO
 aDO
 aDO
-aDO
+alk
 amt
 aVf
 apN
@@ -42958,7 +42964,7 @@ alk
 aDO
 aDO
 aDO
-aDO
+alk
 amt
 ayQ
 aGm
@@ -43201,21 +43207,21 @@ aDO
 aDO
 aDO
 aDO
-aDO
 alk
-aDO
-aDO
-aDO
-aDO
-aDO
+alk
+alk
+alk
+alk
+alk
+alk
 abF
-aDO
-aDO
 alk
-aDO
-aDO
-aDO
-aDO
+alk
+alk
+alk
+alk
+alk
+alk
 amt
 amt
 aNq
@@ -43458,7 +43464,7 @@ aXa
 aDO
 aDO
 aDO
-aDO
+alk
 abU
 auA
 auA
@@ -47066,7 +47072,7 @@ aPH
 anU
 abu
 aDO
-azb
+alk
 aDO
 aDO
 aDO
@@ -51950,10 +51956,10 @@ aIO
 aDO
 aDO
 alk
-aDO
-aDO
-aDO
-aDO
+alk
+alk
+mPX
+alk
 alk
 aDO
 aDO
@@ -52207,10 +52213,10 @@ aIO
 aIO
 aIO
 aIO
-aDO
-aDO
-aDO
-aDO
+alk
+alk
+alk
+alk
 alk
 aDO
 aDO
@@ -53221,7 +53227,7 @@ aXC
 aSU
 aOY
 anI
-aOn
+fVo
 aZg
 aoT
 awc
@@ -59156,7 +59162,7 @@ alk
 alk
 alk
 alk
-alk
+hut
 aDO
 aDO
 aDO
@@ -59348,10 +59354,10 @@ awe
 avW
 aok
 aqA
-aDO
-aDO
+alk
+alk
 aoy
-aDO
+alk
 aVb
 arH
 aVb
@@ -59605,7 +59611,7 @@ aMX
 aGG
 adT
 aqA
-aDO
+alk
 aIt
 aIt
 aIt
@@ -59862,7 +59868,7 @@ aci
 aIp
 axu
 aqA
-aDO
+alk
 aIt
 aVH
 abq
@@ -60119,7 +60125,7 @@ ajr
 aIZ
 anh
 aTm
-aDO
+alk
 aIt
 adw
 aRw
@@ -60633,7 +60639,7 @@ aTm
 aTm
 aTm
 aTm
-aDO
+alk
 aIt
 aZa
 azB
@@ -80283,7 +80289,7 @@ aDO
 aDO
 aDO
 aDO
-agS
+aDO
 aDO
 aDO
 aDO
