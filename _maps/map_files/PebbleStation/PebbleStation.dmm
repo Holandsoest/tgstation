@@ -3062,10 +3062,10 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "ahI" = (
-/obj/machinery/modular_computer/preset/cargochat/service{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/structure/filingcabinet/chestdrawer{
+	pixel_y = 2
+	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "ahJ" = (
@@ -3150,8 +3150,8 @@
 /turf/open/floor/eighties,
 /area/station/tcommsat)
 "ahV" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
-	dir = 5
+/obj/machinery/atmospherics/pipe/layer_manifold/supply/hidden{
+	dir = 4
 	},
 /turf/closed/wall/r_wall,
 /area/station/engineering/atmos)
@@ -4694,9 +4694,6 @@
 /area/station/maintenance/department/bridge)
 "alY" = (
 /obj/item/radio/intercom/directional/south,
-/obj/structure/filingcabinet/chestdrawer{
-	pixel_y = 2
-	},
 /turf/open/floor/carpet,
 /area/station/command/heads_quarters/hop)
 "alZ" = (
@@ -5618,7 +5615,9 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "aos" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/supply/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold/supply/visible/layer4{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/visible{
 	dir = 4
 	},
@@ -11048,10 +11047,10 @@
 /turf/open/floor/catwalk_floor,
 /area/station/ai_monitored/turret_protected/ai_upload)
 "aCf" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible/layer4{
+	dir = 10
+	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aCg" = (
@@ -19234,9 +19233,11 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "aWF" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/heater/on{
+/obj/machinery/atmospherics/components/unary/thermomachine/heater/layer4{
 	dir = 4;
-	name = "Supply air temperature controll"
+	name = "Air Supply temperature control";
+	icon_state = "thermo_base_1";
+	on = 1
 	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
