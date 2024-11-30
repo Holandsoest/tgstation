@@ -1033,12 +1033,6 @@
 /obj/structure/lattice,
 /turf/open/space/basic,
 /area/space/nearstation)
-"fI" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space/nearstation)
 "fO" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/external{
@@ -1067,17 +1061,6 @@
 	},
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/port/aft)
-"fR" = (
-/obj/machinery/conveyor{
-	id = "Hallway_conv";
-	dir = 4
-	},
-/obj/machinery/conveyor{
-	id = "Hallway_conv";
-	dir = 4
-	},
-/turf/open/floor/noslip,
-/area/station/hallway/primary/port)
 "fS" = (
 /obj/structure/window/reinforced/plasma/fulltile,
 /turf/open/floor/engine,
@@ -1975,6 +1958,17 @@
 "lm" = (
 /turf/open/floor/iron/white/textured,
 /area/station/science/robotics/lab)
+"lp" = (
+/obj/machinery/door/window/brigdoor/left/directional/west{
+	req_access = list("xenobiology");
+	name = "Xenobio Pen 2"
+	},
+/obj/machinery/door/window/brigdoor/left/directional/east{
+	req_access = list("xenobiology");
+	name = "Xenobio Pen 2"
+	},
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
 "lq" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -2232,6 +2226,10 @@
 "nd" = (
 /turf/open/floor/plating,
 /area/station/engineering/break_room)
+"nj" = (
+/obj/machinery/air_sensor/engine_chamber,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
 "nk" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -2308,13 +2306,13 @@
 /turf/open/floor/wood,
 /area/station/service/bar)
 "nD" = (
-/obj/machinery/door/window/brigdoor{
-	dir = 4;
-	req_access = list("xenobiology")
+/obj/machinery/door/window/brigdoor/left/directional/west{
+	req_access = list("xenobiology");
+	name = "Xenobio Pen 1"
 	},
-/obj/machinery/door/window/brigdoor{
-	dir = 8;
-	req_access = list("xenobiology")
+/obj/machinery/door/window/brigdoor/left/directional/east{
+	req_access = list("xenobiology");
+	name = "Xenobio Pen 1"
 	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
@@ -3613,7 +3611,7 @@
 "ve" = (
 /obj/machinery/door/window/left/directional/west{
 	req_access = list("science");
-	name = "Genetics pen"
+	name = "Genetics Pen"
 	},
 /turf/open/floor/iron/sepia,
 /area/station/science/genetics)
@@ -3654,12 +3652,6 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/station/medical/morgue)
-"vA" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/closed/wall,
-/area/station/science/breakroom)
 "vB" = (
 /obj/structure/table,
 /obj/item/stack/sheet/iron/fifty{
@@ -3797,14 +3789,13 @@
 /turf/open/floor/iron,
 /area/station/cargo)
 "wr" = (
-/obj/machinery/door/window{
-	dir = 1;
-	req_access = list()
-	},
 /obj/machinery/mineral/ore_redemption,
 /obj/effect/decal/cleanable/crayon{
 	icon_state = "i";
 	name = "letter"
+	},
+/obj/machinery/door/window/left/directional/north{
+	name = "Mining Office Ore Redemption Seal"
 	},
 /turf/open/floor/plating,
 /area/station/cargo/miningoffice)
@@ -5121,9 +5112,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary)
 "EF" = (
-/obj/machinery/door/window{
-	req_access = list()
-	},
+/obj/machinery/door/window/left/directional/south,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "EI" = (
@@ -5442,10 +5431,7 @@
 /area/station/cargo)
 "Gg" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window{
-	dir = 1;
-	req_access = list()
-	},
+/obj/machinery/door/window/left/directional/north,
 /turf/open/floor/plating,
 /area/station/hallway/primary/port)
 "Gj" = (
@@ -5893,10 +5879,6 @@
 /obj/machinery/atmospherics/components/binary/pump/on,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
-"IZ" = (
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space)
 "Jb" = (
 /obj/machinery/light/directional/north,
 /obj/structure/table/wood,
@@ -6128,7 +6110,11 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/solars/starboard/fore)
 "Kp" = (
-/obj/machinery/door/airlock/research/glass,
+/obj/machinery/door/airlock/research{
+	glass = 1;
+	name = "Slime Euthanization Chamber";
+	opacity = 0
+	},
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology)
 "Ks" = (
@@ -6452,13 +6438,13 @@
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "LK" = (
-/obj/machinery/door/window/brigdoor{
-	dir = 8;
-	req_access = list("xenobiology")
+/obj/machinery/door/window/brigdoor/left/directional/west{
+	req_access = list("xenobiology");
+	name = "Xenobio Pen 4"
 	},
-/obj/machinery/door/window/brigdoor{
-	dir = 4;
-	req_access = list("xenobiology")
+/obj/machinery/door/window/brigdoor/left/directional/east{
+	req_access = list("xenobiology");
+	name = "Xenobio Pen 4"
 	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
@@ -7135,11 +7121,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating/airless,
 /area/station/science/xenobiology/hallway)
-"Pj" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space/nearstation)
 "Pl" = (
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 1
@@ -7702,7 +7683,8 @@
 /area/station/hallway/floor1/aft)
 "Sq" = (
 /obj/machinery/door/window/brigdoor/left/directional/east{
-	req_access = list("science")
+	req_access = list("science");
+	name = "Robotics Service"
 	},
 /obj/structure/table,
 /obj/effect/decal/cleanable/ants,
@@ -7948,13 +7930,13 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/station/medical/morgue)
 "TR" = (
-/obj/machinery/door/window/brigdoor{
-	dir = 4;
-	req_access = list()
+/obj/machinery/door/window/brigdoor/left/directional/west{
+	req_access = list("xenobiology");
+	name = "Xenobio Pen 3"
 	},
-/obj/machinery/door/window/brigdoor{
-	dir = 8;
-	req_access = list("xenobiology")
+/obj/machinery/door/window/brigdoor/left/directional/east{
+	req_access = list("xenobiology");
+	name = "Xenobio Pen 3"
 	},
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
@@ -8315,7 +8297,8 @@
 /area/station/science/research)
 "Wx" = (
 /obj/machinery/door/window/brigdoor/left/directional/west{
-	req_access = list("science")
+	req_access = list("science");
+	name = "Genetics Service"
 	},
 /obj/structure/table,
 /obj/item/reagent_containers/cup/glass/waterbottle/empty{
@@ -8566,11 +8549,12 @@
 /turf/open/floor/iron,
 /area/station/cargo)
 "Xe" = (
-/obj/machinery/door/window/brigdoor{
+/obj/machinery/door/window/brigdoor/left/directional/north{
+	name = "Maximum Security Test Chamber";
 	req_access = list("xenobiology")
 	},
-/obj/machinery/door/window/brigdoor{
-	dir = 1;
+/obj/machinery/door/window/brigdoor/left/directional/south{
+	name = "Maximum Security Test Chamber";
 	req_access = list("xenobiology")
 	},
 /turf/open/floor/plating/airless,
@@ -24152,7 +24136,7 @@ Cu
 sC
 Cu
 sL
-Pj
+sL
 Mn
 sL
 sL
@@ -24558,7 +24542,7 @@ WR
 Mn
 Mn
 Mn
-gR
+sL
 Ta
 Ta
 tD
@@ -24815,7 +24799,7 @@ sL
 sL
 sL
 sL
-gR
+sL
 Ta
 RM
 jE
@@ -25045,7 +25029,7 @@ sL
 aC
 ah
 aC
-Pj
+sL
 ze
 ze
 ze
@@ -25062,17 +25046,17 @@ ze
 ze
 ze
 ze
-Pj
+sL
 aC
 ah
 aC
-ze
-ze
-ze
-ze
-ze
-ze
-ze
+sL
+sL
+sL
+sL
+sL
+sL
+sL
 Ta
 GI
 SI
@@ -25302,34 +25286,34 @@ sL
 aC
 YX
 aC
-fI
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-fI
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
+sL
 aC
 YX
 aC
-ze
-ze
-ze
-ze
-ze
-ze
-ze
+sL
+sL
+sL
+sL
+sL
+sL
+sL
 Ta
 tk
 IP
@@ -26715,7 +26699,7 @@ sL
 sL
 sL
 sL
-IZ
+sL
 sL
 JO
 fo
@@ -28815,7 +28799,7 @@ pR
 Qb
 pR
 Xc
-pR
+nj
 fS
 zd
 GV
@@ -33478,7 +33462,7 @@ PX
 PX
 ob
 ob
-fR
+si
 kl
 Xf
 SP
@@ -41432,7 +41416,7 @@ QW
 NH
 NH
 NH
-vA
+NH
 Tu
 NH
 NH
@@ -42442,7 +42426,7 @@ QW
 Ny
 QW
 YD
-LK
+lp
 YD
 QW
 YD
