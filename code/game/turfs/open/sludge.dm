@@ -40,17 +40,19 @@
 /turf/open/sludge/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
 	if(isliving(mover))
-		// if(HAS_TRAIT(mover, TRAIT_SLUDGE_WALKER))//see code/__defines/traits.dm
-		// 	return TRUE
-		// if(mover.pulledby && HAS_TRAIT(mover.pulledby, TRAIT_SLUDGE_WALKER))
-		// 	return TRUE
+		var/from_turf = get_turf(mover)//if we move from non-sludge, then we are always allowed on, and any depth increments we perform on the from_turf.
+		if(!istype(from_turf, /turf/open/sludge))
+			return TRUE
 
-		if(prob(depth*stuck_chance))
+		//if prob then drop item here
+
+		if(prob(from_turf.depth*stuck_chance))
 			mover.Shake(duration = 1 SECONDS)
-			if(depth == 5)
-				loc.balloon_alert(mover, "stuggles hopelessly in the goop!")
+			if(from_turf.depth == 5)
+				// loc.balloon_alert(mover, "stuggles hopelessly in the goop!")
 				return FALSE
-			loc.balloon_alert(mover, "sinks into the goop!")
-			depth = depth + 1
+			// loc.balloon_alert(mover, "sinks into the goop!")
+			from_turf.depth = from_turf.depth + 1
 			return FALSE
 	return .
+
