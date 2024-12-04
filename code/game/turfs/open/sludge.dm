@@ -8,7 +8,7 @@
 	// smoothing_groups = SMOOTH_GROUP_SLUDGE //see code/__defines/icon_smoothing.dm
 	// canSmoothWith = SMOOTH_GROUP_SLUDGE
 
-	// slowdown = 10
+	slowdown = 5
 
 	bullet_bounce_sound = 'sound/items/tools/welder2.ogg'
 
@@ -18,12 +18,11 @@
 	heavyfootstep = FOOTSTEP_LAVA
 
 	var/depth = 1 // [1..5] how deeper the depth, the more difficult it is to get out
-	var/stuck_chance = 20 //[percentage 0..20] to fail. This is later multiplied by the depth.
+	var/stuck_chance = 20 //[percentage 0..20 ] to fail. This is later multiplied by the depth.
+	var/steal_change = 30 //[percentage 0..100] to steal an item from the users inventory everytime src does something.
 
-	var/sludge_damage_L5 = 0.05			/// How much damage we deal to living mobs stepping/standing on us.
+	var/sludge_damage_L5 = 0.05 // How much damage we deal to living mobs stepping/standing on us.
 
-	var/disturbed_layer = 0				/// The longer you disturb the sludge, the quicker it pulls you in. [0..3]
-	var/disturbed_pull_multiplier = 0.05/// How much we pull mobs down into the sludge if they don't move.
 
 
 
@@ -40,19 +39,30 @@
 /turf/open/sludge/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
 	if(isliving(mover))
-		var/from_turf = get_turf(mover)//if we move from non-sludge, then we are always allowed on, and any depth increments we perform on the from_turf.
+		var/from_turf = get_turf(mover)
+
+		//If we move from non-sludge, then we are always allowed on.
 		if(!istype(from_turf, /turf/open/sludge))
 			return TRUE
 
-		//if prob then drop item here
+		//There is a chance mobs drop items.
 
-		if(prob(from_turf.depth*stuck_chance))
-			mover.Shake(duration = 1 SECONDS)
-			if(from_turf.depth == 5)
-				// loc.balloon_alert(mover, "stuggles hopelessly in the goop!")
-				return FALSE
-			// loc.balloon_alert(mover, "sinks into the goop!")
-			from_turf.depth = from_turf.depth + 1
+
+		//Mobs always sink.
+		if (depth != 5)
+			depth  = depth + 1
+			slowdown = depth * 5
+			to_chat(mover, span_warning("You sink further into the sludge!"))
+
+		//When mobs sink to much they get damaged
+		else
+			to_chat(mover, span_warning("Oh shit, you are stuck in the sludge!"))
+			mover.Shake(pixelshiftx = 1, pixelshifty = 1, duration = 1 DECISECONDS)
+			//TEMP till i figure out how to sufficate user when they do not have o2 gear...
+			return FALSE
+
+		//There is a chance mobs get stuck and cant move.
+		if(prob(depth*stuck_chance))
+			mover.Shake(pixelshiftx = 6-depth, pixelshifty = 6-depth, duration = 2 DECISECONDS)
 			return FALSE
 	return .
-
