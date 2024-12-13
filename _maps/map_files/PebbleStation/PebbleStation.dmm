@@ -18966,7 +18966,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/lava,
+/turf/open/lava/smooth,
 /area/station/maintenance/starboard/central)
 "aVM" = (
 /obj/item/wheelchair{
