@@ -70,3 +70,12 @@
 			mover.Shake(pixelshiftx = 6-depth, pixelshifty = 6-depth, duration = 2 DECISECONDS)
 			return FALSE
 	return .
+
+/turf/open/sludge/examine(mob/user)
+	. = ..()
+	if (depth == 1) . += span_notice("It is solidified mix of various fluids, and it looks solid, but that probably only counts for the top crust.")
+	if (depth == 2) . += span_notice("It is sticky mix of various fluids, the crust looks disturbed, and it looks solid at some patches, but it is not.")
+	if (depth == 3) . += span_notice("It is viscouse mix of various fluids.")
+	if (depth == 4) . += span_notice("It is liquid but sticky mix of various fluids.")
+	if (depth == 5) . += span_notice("It is runny but sticky mix of various fluids. Impossible to move in.")
+	. += span_notice("It can be [EXAMINE_HINT("scooped")] with a beaker.")
