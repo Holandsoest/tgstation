@@ -4,7 +4,7 @@
 	desc = "Looks sticky, discusting, and unsafe."
 
 	icon = 'icons/turf/floors/sludge.dmi'
-	icon_state = "lava-255"
+	icon_state = "sludge-255"
 	// smoothing_groups = SMOOTH_GROUP_SLUDGE //see code/__defines/icon_smoothing.dm
 	// canSmoothWith = SMOOTH_GROUP_SLUDGE
 
@@ -35,18 +35,22 @@
 /turf/open/sludge/ex_act(severity, target)
 	return FALSE
 
+/turf/open/sludge/proc/setdepth(new_depth)
+	depth = new_depth
+/turf/open/sludge/proc/getdepth()
+	return depth
 
-/turf/open/sludge/CanAllowThrough(atom/movable/mover, border_dir)
+/turf/open/sludge/CanPass(atom/movable/mover, border_dir)
 	. = ..()
 	if(isliving(mover))
 		var/from_turf = get_turf(mover)
 
 		//If we move from non-sludge, then we are always allowed on.
 		if(!istype(from_turf, /turf/open/sludge))
-			return TRUE
+			return .//unless the parent has something to say about it.
+
 
 		//There is a chance mobs drop items.
-
 
 		//Mobs always sink.
 		if (depth != 5)
