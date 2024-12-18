@@ -17071,7 +17071,7 @@
 "aQW" = (
 /obj/effect/spawner/random/maintenance/two,
 /obj/effect/spawner/random/structure/closet_maintenance,
-/turf/open/floor/plating,
+/turf/open/sludge,
 /area/station/maintenance/starboard/central)
 "aQX" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
@@ -17413,7 +17413,7 @@
 /area/station/command/bridge)
 "aRY" = (
 /obj/item/kirbyplants/organic/plant5,
-/turf/open/floor/plating,
+/turf/open/sludge,
 /area/station/maintenance/starboard/central)
 "aRZ" = (
 /obj/effect/landmark/blobstart,
@@ -18966,7 +18966,7 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/lava/smooth,
+/turf/open/sludge,
 /area/station/maintenance/starboard/central)
 "aVM" = (
 /obj/item/wheelchair{
@@ -20782,6 +20782,9 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
+"hku" = (
+/turf/open/sludge,
+/area/station/maintenance/starboard/central)
 "hMq" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -55509,7 +55512,7 @@ anz
 aWX
 aQW
 aRY
-ahc
+hku
 ahc
 awx
 ahc
