@@ -25,6 +25,7 @@
 
 /turf/open/sludge/Initialize(mapload)
 	. = ..()
+	AddElement(/datum/element/immerse, icon, icon_state, "immerse", "#201000", alpha = 200)
 
 /turf/open/sludge/Destroy()
 	return ..()
@@ -32,10 +33,13 @@
 /turf/open/sludge/ex_act(severity, target)
 	return FALSE
 
+
+
 /turf/open/sludge/CanAllowThrough(atom/movable/mover, border_dir)//FIXME: As AnturK said, i should not use this proc, but preferably atom/exit or atom/exited, because this should be pure (maybe not because this fork runs behind).
 	. = ..()
 	if(isliving(mover))
 		var/turf/open/sludge/from_turf = get_turf(mover)
+		var/not_stuck = prob(from_turf.depth*stuck_chance)
 
 		//If we move from non-sludge, then we are always allowed on.
 		if(!istype(from_turf, /turf/open/sludge))
@@ -45,9 +49,11 @@
 
 
 		//Mobs sometimes sink the sludge they are going towards.
-		if (depth != 5 && prob(50))
+		if (depth != 5 && (not_stuck || prob(20)) )
 			depth  = depth + 1
 			slowdown = depth * 5
+			if (!not_stuck)
+				to_chat(mover, span_warning("You disturb the other sludge!"))
 
 		//Mobs always sink the sludge they are standing on.
 		if (from_turf.depth != 5)
@@ -57,15 +63,16 @@
 
 		//TODO: When mobs sink to much they get damaged
 		else
-			to_chat(mover, span_warning("Oh shit, you are stuck in the sludge!"))
+			to_chat(mover, span_warning("Uh oh, you are stuck in the sludge!"))
 			mover.Shake(pixelshiftx = 1, pixelshifty = 1, duration = 1 DECISECONDS)
 			//TEMP till i figure out how to sufficate user when they do not have o2 gear...
 			return FALSE
 
 		//There is a chance mobs get stuck and cant move.
-		if(prob(depth*stuck_chance))
+		if(not_stuck)
 			mover.Shake(pixelshiftx = 6-depth, pixelshifty = 6-depth, duration = 2 DECISECONDS)
 			return FALSE
+
 	return .
 
 /turf/open/sludge/examine(mob/user)
