@@ -40,7 +40,7 @@
 /turf/open/sludge/proc/getdepth()
 	return depth
 
-/turf/open/sludge/CanPass(atom/movable/mover, border_dir)
+/turf/open/sludge/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
 	if(isliving(mover))
 		var/from_turf = get_turf(mover)
@@ -49,8 +49,8 @@
 		if(!istype(from_turf, /turf/open/sludge))
 			return .//unless the parent has something to say about it.
 
-
 		//There is a chance mobs drop items.
+
 
 		//Mobs always sink.
 		if (depth != 5)
