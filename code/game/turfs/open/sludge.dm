@@ -32,15 +32,10 @@
 /turf/open/sludge/ex_act(severity, target)
 	return FALSE
 
-/turf/open/sludge/proc/setdepth(new_depth)
-	depth = new_depth
-/turf/open/sludge/proc/getdepth()
-	return depth
-
-/turf/open/sludge/CanAllowThrough(atom/movable/mover, border_dir)
+/turf/open/sludge/CanAllowThrough(atom/movable/mover, border_dir)//FIXME: As AnturK said, i should not use this proc, but preferably atom/exit or atom/exited, because this should be pure (maybe not because this fork runs behind).
 	. = ..()
 	if(isliving(mover))
-		var/from_turf = get_turf(mover)
+		var/turf/open/sludge/from_turf = get_turf(mover)
 
 		//If we move from non-sludge, then we are always allowed on.
 		if(!istype(from_turf, /turf/open/sludge))
