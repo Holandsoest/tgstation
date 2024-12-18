@@ -23,9 +23,6 @@
 
 	var/sludge_damage_L5 = 0.05 // How much damage we deal to living mobs stepping/standing on us.
 
-
-
-
 /turf/open/sludge/Initialize(mapload)
 	. = ..()
 
@@ -49,16 +46,21 @@
 		if(!istype(from_turf, /turf/open/sludge))
 			return .//unless the parent has something to say about it.
 
-		//There is a chance mobs drop items.
+		//TODO: There is a chance mobs drop items. Hands and pockets and pulling, then bags pda and ID, then anything but skirt, then skirt.
 
 
-		//Mobs always sink.
-		if (depth != 5)
+		//Mobs sometimes sink the sludge they are going towards.
+		if (depth != 5 && prob(50))
 			depth  = depth + 1
 			slowdown = depth * 5
+
+		//Mobs always sink the sludge they are standing on.
+		if (from_turf.depth != 5)
+			from_turf.depth  = from_turf.depth + 1
+			from_turf.slowdown = from_turf.depth * 5
 			to_chat(mover, span_warning("You sink further into the sludge!"))
 
-		//When mobs sink to much they get damaged
+		//TODO: When mobs sink to much they get damaged
 		else
 			to_chat(mover, span_warning("Oh shit, you are stuck in the sludge!"))
 			mover.Shake(pixelshiftx = 1, pixelshifty = 1, duration = 1 DECISECONDS)
