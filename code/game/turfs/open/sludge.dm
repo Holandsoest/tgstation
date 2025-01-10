@@ -1,7 +1,7 @@
 /turf/open/sludge
 	name = "Sludge"
 	gender = PLURAL
-	desc = "Looks sticky, discusting, and unsafe."
+	desc = "Looks sticky, disgusting, and unsafe."
 
 	icon = 'icons/turf/floors/sludge.dmi'
 	icon_state = "sludge-255"
