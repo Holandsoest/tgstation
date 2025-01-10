@@ -2867,6 +2867,7 @@
 #include "code\game\turfs\open\planet.dm"
 #include "code\game\turfs\open\river.dm"
 #include "code\game\turfs\open\sand.dm"
+#include "code\game\turfs\open\scrapyard.dm"
 #include "code\game\turfs\open\sludge.dm"
 #include "code\game\turfs\open\snow.dm"
 #include "code\game\turfs\open\water.dm"
