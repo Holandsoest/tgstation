@@ -196,7 +196,10 @@
 /turf/open/floor/engine/n2,
 /area/station/engineering/atmos)
 "aay" = (
-/obj/machinery/power/smes/full,
+/obj/machinery/power/smes/full{
+	input_level = 200000;
+	output_level = 60000
+	},
 /obj/structure/cable,
 /turf/open/floor/iron/herringbone,
 /area/station/engineering/supermatter/room)
@@ -768,13 +771,6 @@
 "abU" = (
 /turf/closed/wall,
 /area/station/commons/dorms)
-"abV" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8;
-	name = "Cold Loop to Gas"
-	},
-/turf/open/floor/engine,
-/area/station/engineering/supermatter/room)
 "abW" = (
 /turf/open/floor/plating,
 /area/station/maintenance/department/bridge)
@@ -3873,7 +3869,10 @@
 /turf/open/floor/iron/white,
 /area/station/medical/storage)
 "ajZ" = (
-/obj/machinery/power/smes/full,
+/obj/machinery/power/smes/full{
+	input_level = 200000;
+	output_level = 60000
+	},
 /obj/structure/cable,
 /obj/machinery/light/cold/directional/west,
 /obj/machinery/airalarm/directional/west,
@@ -5493,6 +5492,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/solars/starboard/fore)
 "aor" = (
+/obj/structure/railing,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "aos" = (
@@ -6895,6 +6895,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "arY" = (
@@ -7331,10 +7334,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
-"ati" = (
-/obj/structure/sign/map/left,
-/turf/closed/wall,
-/area/station/engineering/atmos/storage/gas)
 "atj" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
@@ -9572,10 +9571,6 @@
 	id = "Engineering";
 	name = "Engineering Security Doors"
 	},
-/obj/machinery/door/poddoor/shutters/window/preopen{
-	id = "engsm";
-	name = "Electric Controll Room"
-	},
 /turf/open/floor/iron/herringbone,
 /area/station/engineering/supermatter/room)
 "ayQ" = (
@@ -11123,10 +11118,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
-"aCW" = (
-/obj/structure/sign/map/right,
-/turf/closed/wall,
-/area/station/engineering/atmos/storage/gas)
 "aCX" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 4
@@ -11404,6 +11395,9 @@
 "aDK" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
@@ -11709,7 +11703,6 @@
 /turf/open/floor/iron/dark/diagonal,
 /area/station/engineering/gravity_generator)
 "aEG" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/machinery/requests_console/directional/west{
 	department = "Engineering SM";
 	name = "Engineering Requests Console";
@@ -13904,6 +13897,12 @@
 /area/station/hallway/primary/central)
 "aJY" = (
 /obj/structure/reagent_dispensers/plumbed,
+/obj/structure/sign/map/left{
+	desc = "A framed picture of the station. Clockwise from science at the top (purple), you see engineering (yellow), escape (red and white), medbay (green), command (blue), security (red), arrivals (blue and white), and finally cargo (brown).";
+	icon_state = "map-PS";
+	pixel_x = 0;
+	pixel_y = 32
+	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "aJZ" = (
@@ -16229,10 +16228,6 @@
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 8
 	},
-/obj/machinery/door/poddoor/shutters/window/preopen{
-	id = "engsm";
-	name = "Electric Controll Room"
-	},
 /turf/open/floor/iron/herringbone,
 /area/station/engineering/supermatter/room)
 "aPM" = (
@@ -16782,7 +16777,10 @@
 /turf/closed/wall/r_wall,
 /area/station/science/xenobiology/hallway)
 "aRm" = (
-/obj/machinery/power/smes/full,
+/obj/machinery/power/smes/full{
+	input_level = 200000;
+	output_level = 60000
+	},
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/mapping_helpers/apc/cell_10k,
@@ -17304,13 +17302,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/brig)
-"aSI" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/station/engineering/supermatter/room)
 "aSJ" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/structure/cable,
@@ -17436,7 +17427,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "aTc" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/camera/directional/north{
 	c_tag = "Engineering - SM north";
@@ -17905,13 +17896,6 @@
 "aUd" = (
 /turf/closed/wall,
 /area/station/hallway/secondary/exit/departure_lounge)
-"aUe" = (
-/obj/machinery/atmospherics/components/trinary/filter/flipped/critical{
-	filter_type = list(/datum/gas/nitrogen);
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/station/engineering/supermatter/room)
 "aUf" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/turf_decal/delivery,
@@ -19265,10 +19249,6 @@
 	id = "Engineering";
 	name = "Engineering Security Doors"
 	},
-/obj/machinery/door/poddoor/shutters/window/preopen{
-	id = "engsm";
-	name = "Electric Controll Room"
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/herringbone,
 /area/station/engineering/supermatter/room)
@@ -20166,6 +20146,9 @@
 /area/station/commons/toilet/restrooms)
 "aZT" = (
 /obj/machinery/air_sensor/engine_chamber,
+/obj/structure/railing{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "aZU" = (
@@ -20585,6 +20568,15 @@
 /obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
+"lsK" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
 "lFQ" = (
 /obj/structure/table/glass,
 /obj/item/aicard,
@@ -20741,6 +20733,13 @@
 /obj/item/clothing/mask/breath,
 /turf/open/floor/plating,
 /area/station/maintenance/port/central)
+"phb" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/railing/corner,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
 "pil" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -20764,6 +20763,15 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+"pyD" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
 "pDZ" = (
 /obj/structure/transit_tube/curved/flipped{
 	dir = 4
@@ -20785,6 +20793,15 @@
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
+"qbP" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
 "qco" = (
 /turf/closed/wall/r_wall,
 /area/space/nearstation)
@@ -20823,6 +20840,11 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"qJE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
 "qVR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible,
 /obj/structure/cable,
@@ -57179,7 +57201,7 @@ anS
 aUQ
 aSt
 awI
-ati
+aee
 aJY
 aFx
 azv
@@ -57436,7 +57458,7 @@ aPv
 aee
 aee
 aee
-aCW
+aee
 aVh
 aFx
 avL
@@ -60775,8 +60797,8 @@ ayN
 ayN
 ayN
 aIt
-adM
-azB
+aky
+aRw
 alt
 aYd
 awH
@@ -61032,13 +61054,13 @@ aDO
 aDO
 ayN
 aIt
-aUe
-azB
+aky
+aRw
 ayd
 ayd
 ayd
-aDK
-aDK
+phb
+lsK
 aDK
 anf
 adu
@@ -61290,7 +61312,7 @@ aDO
 ayN
 aIt
 aTc
-aSI
+aGg
 aiF
 aib
 adz
@@ -61546,13 +61568,13 @@ alk
 alk
 ayN
 aIt
-aUe
+aky
 aEG
 ayd
 ayd
 ayd
-arX
-arX
+pyD
+qbP
 arX
 ayd
 aIb
@@ -61803,8 +61825,8 @@ aDO
 aDO
 ayN
 aIt
-adM
-aZP
+aky
+atW
 aex
 aon
 ayd
@@ -62060,8 +62082,8 @@ aDO
 aDO
 ayN
 aIt
-aZa
-aZP
+qJE
+atW
 adM
 aGH
 aMa
@@ -62831,7 +62853,7 @@ aDO
 aDO
 ayN
 aIt
-abV
+aky
 aPC
 aPC
 afA
